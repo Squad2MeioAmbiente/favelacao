@@ -6,11 +6,13 @@
         die("FALHA NA CONEXAO : ". $conn->connect_error);
     }
 
-    $sql = "SELECT * FROM contexto";
+    $sql = "SELECT * FROM enredo"; ///MUDEI ENREDO, ESTAVA CONTEXTO
     $result = $conn->query($sql);
 
     while($row =$result->fetch_assoc()) {
         echo "<p>" .$row['frase']
         .$row['imagem']."</p>";
     }
+
+    
 ?>
