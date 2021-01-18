@@ -1,12 +1,13 @@
 
-
-async function getText() {
-    var response = await fetch("http://projetos/USEPHPAQUI/MEUfseletro/em%20react/Back-End/") 
-     dados = await response.json()
-    console.log(dados)
+// var dados
+// async function getText() {
+//     var response = await fetch("http://projetos/USEPHPAQUI/MEUfseletro/em%20react/Back-End/") 
+//      dados = await response.json()
+//     console.log(dados)
        
-}
+// }
 // console.log(dados)
+// // console.log(dados)
 // var dados
 // async function getText() {
 //     fetch("http://projetos/USEPHPAQUI/MEUfseletro/em%20react/Back-End/")
@@ -15,8 +16,8 @@ async function getText() {
 
 // }
 
-var count = 0
-var frases = [{"texto":"Frase1"},{"texto":"Frase2"},{"texto":"Frase3"},{"texto":"Frase4"},{"texto":"Frase5"},]
+
+// var frases = [{"texto":"Frase1"},{"texto":"Frase2"},{"texto":"Frase3"},{"texto":"Frase4"},{"texto":"Frase5"},]
 
 // var frases = [
 //     {
@@ -41,13 +42,16 @@ var frases = [{"texto":"Frase1"},{"texto":"Frase2"},{"texto":"Frase3"},{"texto":
 //     "review": "Adorei!! Super econômico"
 //     }
 //     ]
- 
+ var count = 0
 
-function next (dados){
+async function next (dados){
+  var response = await fetch("http://projetos/USEPHPAQUI/MEUfseletro/em%20react/Back-End/") 
+     dados = await response.json()
+    console.log(dados)
 
   var txt =document.getElementById("txt")
 
-  txt.innerHTML = frases[count].texto
+  txt.innerHTML = dados[count].email
 
 
   count ++
