@@ -16,7 +16,7 @@ $numRows = $stmt->rowCount();
 if($numRows>0){
 
     $enredo_arr=array();
-    $enredo_arr["enredo"]=array();
+    $enredo_arr=array();
     
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
         
@@ -28,7 +28,7 @@ if($numRows>0){
             "frase"=>$frase,
         );
 
-        array_push($enredo_arr["enredo"], $enredo_item);
+        array_push($enredo_arr, $enredo_item);
     }
 
     http_response_code(200);
