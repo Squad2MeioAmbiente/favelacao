@@ -15,13 +15,7 @@ async function getText() {
 
 // }
 
-
-
-
-
 var count = 0
-
-// var frases = ["Frase 1", "Frase 2", "Frase 3","Frase 4","Frase 5","Frase 6","Frase 7","Frase 8"]
 var frases = [{"texto":"Frase1"},{"texto":"Frase2"},{"texto":"Frase3"},{"texto":"Frase4"},{"texto":"Frase5"},]
 
 // var frases = [
