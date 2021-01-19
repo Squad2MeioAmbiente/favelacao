@@ -1,0 +1,74 @@
+#telaLogin {
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* sombra dis/dis/  */
+    box-shadow: 1px 5px 234px #8ECAE6;
+    /* opacidade */
+    /* opacity: 0.8; */
+    border-radius: 20px 20px 20px 20px;
+}
+
+#fundo {
+    background-color:#219EBC ;
+    /* background-image: url("../img/favel.png"); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logimg {
+    width: 180px;
+    height: 100px;
+    justify-content:baseline;
+
+}
+
+.boton {
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #fff;
+  
+    /* background: #fff; */
+
+    background: #fb8500;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.boton:hover {
+    cursor: pointer;
+    /* background: #ff4d4d; */
+
+    background: #ffb703;
+    color:#023047;
+    transition: 0.2;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    /* color: #bdb5b5; */
+    color: #023047;
+
+    /* color: #FFF; */
+    transition: 0.2s;
+}
+
+a:hover {
+    transition: 0.2s;
+    /* color: #ff4d4d; */
+    /* color: #023047; */
+    color: #ffb703;
+
+}
+
+.footercolor {
+    background: #023047;
+    background-color: #023047;
+}
+
