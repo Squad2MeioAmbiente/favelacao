@@ -21,7 +21,7 @@ if(
     !empty($data->nome) &&
     !empty($data->dataNascimento) &&
     !empty($data->email) &&
-    !empty($data->dataNascimento) &&
+    !empty($data->telefone) &&
     !empty($data->senha) &&
     !empty($data->confirmarSenha) &&
     !empty($data->apelido) &&
