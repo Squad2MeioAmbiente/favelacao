@@ -26,7 +26,7 @@
 
       <div class="card-body">
         <h3>Faça seu cadastro</h3>
-        <form  action="" method="POST" class="" novalidate>
+        <form  name="tcad" action="#" method="GET" class="" >
           <div class="form-group">
             <label for="name"> Nome: </label>
             <input type="text" name="nome" id="" class="form-control" pattern="[a-zA-Zá-Zãâéêíîóôõú\s]+$"  aria-describedby="emailHelp" placeholder="Digite seu nome aqui!" requied>
@@ -51,8 +51,25 @@
             <label for="confirme">Confirme a senha:</label>
             <input type="password" name="confirmesenha" class="form-control" id="" placeholder="digite sua senha ">
           </div>
-          <!--  botton  -->
-          <a type="submit" class="btn btn-block boton" data-toggle="modal" data-target="#siteModal">Entrar</a>
+          <!--  botton   --- duas formasss    --> 
+
+
+          <!-- este botao me leva ao modal porem so manda a info do form do modal -->
+
+          <!-- <a type="submit" name="tcad" class="btn btn-block boton" data-toggle="modal" data-target="#siteModal">Cadastrar</a> -->
+
+        <!-- este codigo manda o form porem não chega ao modal e sem ativar o modal -->
+
+          <!-- <input type="submit" name="tcad" class="btn btn-block boton" data-toggle="modal" data-target="#siteModal" value="Cadastrar"> -->
+
+        <!-- este cod manda a informação do form sem ativar o modal -->
+
+        <!-- <button type="submit" name="tcad" class="btn btn-block boton" data-toggle="modal" data-target="#siteModal">Cadastrar</button> -->
+
+
+         <button type="submit" name="tcad" class="btn btn-block boton" data-toggle="modal" data-target="#siteModal"><a href="">Cadastrar</a></button>
+
+
           <a href="./index.php"> Ja tem conta? </a>
         </form>  
 
@@ -65,7 +82,7 @@
       </div>
   </footer>
 
-<!-- Modal -->
+<!-- Modal -------------------------------------------------------------------->
 <div class="modal fade" id="siteModal" tabindex="-1" role="dialog"'>
   <div class="modal-dialog modal-lg" role="document" >
     <div class="modal-content ">
@@ -76,7 +93,7 @@
             <span>&times;</span>
           </button>          
       </div>
-
+<!-- personagens para escolher  jogo! -->
       <div class="modal-body">
         <div class="container-fluid">
           <div class="card-deck mb-3 text-center">
@@ -84,10 +101,13 @@
             <div class="card mb-4 shadow-sm">            
                   <div class="card-body">
                     <img class="card-img-top" src="./img/perso1.png" alt="Card image cap">
-                          <form action="" method="">
+                          <form action="#" name="tcad" method="get">
                           <!-- <label for=""> Apelido </label> -->
-                              <input type="text" class="form-control" id=""  placeholder=" Insira seu apelido ">
-                          <button type="button"  name="btn_cadastra" class="btn btn-sm btn-block btn-outline-primary">Escolher</button> 
+                              <input type="text" name="tcard" class="form-control" id=""  placeholder=" Insira seu apelido ">
+
+                          <!-- <button type="submit"  name="tcad" class="btn btn-sm btn-block btn-outline-primary">Escolher</button>  -->
+
+                          <input type="submit"  name="tcad" class="btn btn-sm btn-block btn-outline-primary"value="Escolher">
                           </form>                      
                   </div>
             </div>
@@ -95,10 +115,10 @@
             <div class="card mb-4 shadow-sm">            
                   <div class="card-body">
                     <img class="card-img-top" src="./img/perso2.png" alt="Card image cap">
-                          <form action="" method="">
+                          <form action="testcard" name="testcard" method="get">
                           <!-- <label for="#">Apelido</label> -->
                               <input type="text" class="form-control" id=""  placeholder="Insira seu apelido ">
-                          <button type="button" class="btn btn-sm btn-block btn-outline-primary">Escolher </button> 
+                          <button type="button" name="tcard" method="get" class="btn btn-sm btn-block btn-outline-primary">Escolher </button> 
                           </form>                      
                   </div>
             </div>
@@ -107,7 +127,7 @@
                   <div class="card-body">
                     <img class="card-img-top" src="./img/perso3.png" alt="Card image cap">
                           <form action="" method="" >
-                          <label for="">Apelido</label>
+                          <!-- <label for="">Apelido</label> -->
                               <input type="text" class="form-control" id=""  placeholder="Insira seu apelido ">
                           <a href="./index.php" type="button" class="btn btn-sm btn-block btn-outline-primary"> Escolher </a>
                           </form>                      

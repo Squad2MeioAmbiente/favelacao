@@ -13,28 +13,24 @@
     <title>LOgin</title>
   </head>
 
-  <body id="fundo">
+  
+
+  <body id="fundo" >
 
   <header>
     <!--menu-->
+    
     <?php
          include_once('menu.html');
      ?> 
   </header>
-    
+  
     <main class="card" id="telaLogin">
-      <!-- <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card"> -->
-      
-      <!-- <form class="needs-validation" novalidate>
-          <label for="validationNome">Nome Completo: </label>
-          <input type="text" class="form-control" id="validationNome" placeholder="" value="" required>
-          <div class="invalid-feedback">
-            Forneça um nome!
-           </div> -->
+
       <img class="card-img-top mx-auto logimg" src="./img/logo-FavelAção.png" alt="Imagem de capa do card">
 
       <div class="card-body">
-        <form name="#" action="#" method="#"  class="needs-validation">
+        <form name="propriatela" action="#" method="get"  class="needs-validation">
           <div class="form-group">
             <label for="exampleInputEmail1">Login</label>
             <input type="email" class="form-control" id="" aria-describedby="emailHelp" placeholder="Seu email">
@@ -43,7 +39,7 @@
             <label for="exampleInputPassword1">Senha:</label>
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Insira sua senha">
           </div>
-          <button type="submit" class="btn btn-block boton">Entrar</button>
+          <button type="submit" name="propriatela"  class="btn btn-block boton">Entrar</button>
         </form>  
           <a href="./cadastro.php"> Ainda não tem conta? </a>
       </div>
