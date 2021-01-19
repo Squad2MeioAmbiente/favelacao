@@ -12,7 +12,9 @@ async function next (){
 
 
   var img = document.getElementById("teste")
-  img.src= "http://projetos/entregaGame/frontend/img/franco.jpg"
+  var caminho = `../img/character/${dados[count].personagem}`
+  img.src= caminho
+  console.log(caminho)
 
   var fundo = document.getElementById("fundo")
   if (count == 9){

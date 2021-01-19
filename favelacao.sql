@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19-Jan-2021 às 05:28
--- Versão do servidor: 10.4.11-MariaDB
--- versão do PHP: 7.2.28
+-- Tempo de geração: 19-Jan-2021 às 07:01
+-- Versão do servidor: 10.4.14-MariaDB
+-- versão do PHP: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -39,7 +38,7 @@ CREATE TABLE `enredo` (
 --
 
 INSERT INTO `enredo` (`idenredo`, `frase`, `IdPersonagem`) VALUES
-(1, 'Oi, tudo bem? Prazer sou o Hélio!', 4),
+(1, 'Oi, tudo bem? Prazer sou o Hélio!', 1),
 (2, 'Oi, Hélio, prazer! Eu sou o X.', 4),
 (3, 'Nunca te vi por aqui, você é novo?', 4),
 (4, 'Sou, sim.', 4),
@@ -48,12 +47,12 @@ INSERT INTO `enredo` (`idenredo`, `frase`, `IdPersonagem`) VALUES
 (7, 'Também estudo lá. Se quiser eu posso te mostrar Heliópolis, onde comprar picolé, bolinha de gude, essas coisas.', 4),
 (8, 'Nossa! Quero sim, vai ser bem legal.', 4),
 (9, 'Ai!', 4),
-(10, 'O que aconteceu?', 4),
-(11, 'Acho que pisei em um prego.', 4),
-(12, 'Nossa! Você se machucou?', 4),
-(13, 'Ainda bem que não, só furou meu chinelo.', 4),
-(14, 'Menos mal! Infelizmente essas coisas podem acontecer mesmo, temos que prestar muita atenção onde pisamos, os adultos jogam muitos lixos na rua.', 4),
-(15, 'Isso não é legal!', 4),
+(10, 'O que aconteceu?', 5),
+(11, 'Acho que pisei em um prego.', 5),
+(12, 'Nossa! Você se machucou?', 5),
+(13, 'Ainda bem que não, só furou meu chinelo.', 5),
+(14, 'Menos mal! Infelizmente essas coisas podem acontecer mesmo, temos que prestar muita atenção onde pisamos, os adultos jogam muitos lixos na rua.', 5),
+(15, 'Isso não é legal!', 5),
 (16, 'Não mesmo, por isso eu e meus amigos criamos o FavelAção.', 4),
 (17, 'O que é isso?', 4),
 (18, 'Um grupo, formado por crianças para ajudar o meio ambiente. Você poderia participar, será bem-vindo!', 4),
@@ -75,8 +74,8 @@ INSERT INTO `enredo` (`idenredo`, `frase`, `IdPersonagem`) VALUES
 (34, 'Parabéns! Agora você faz parte da turma do FavelAção.', 4),
 (35, 'Teremos muito trabalho pela frente...', 4),
 (36, 'Mas antes de começar quero te apresentar para a turma.', 4),
-(37, 'Essa é a Babi, ela contribui muito no FavelAção.', 4),
-(38, 'Esse é o João, pensa num menino gente fina, que ajuda demais.', 4),
+(37, 'Essa é a Babi, ela contribui muito no FavelAção.', 3),
+(38, 'Esse é o João, pensa num menino gente fina, que ajuda demais.', 2),
 (39, 'Oi, X, seja bem-vindo!', 4),
 (40, 'Prazer, X! Que bom ter você com a gente, ajuda nunca é demais! Estamos precisando mesmo.', 4),
 (41, 'Nós temos a política dos 5 R’s da sustentabilidade ela deve ser aplicada em ordem de importância, assim : reduzir, reutilizar e reciclar. ', 4),
