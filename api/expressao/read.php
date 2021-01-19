@@ -3,42 +3,40 @@ header("Acess-Control-Allow-Origin: *");
 header ("Content-Type: application/json; charset=UTF-8");
 
 include_once '../config/dataBase.php';
-include_once '../models/enredo.php';
+include_once '../models/expressao.php';
 
 $database = new Database();
 $db = $database->getConnection();
 
-$enredo = new Enredo($db);
+$expressao = new Expressao($db);
 
-$stmt = $enredo->read();
+$stmt = $expressao->read();
 $numRows = $stmt->rowCount();
 
 if($numRows>0){
 
-    $enredo_arr=array();
-    $enredo_arr=array();
+    $expressao_arr=array();
+    $expressao_arr["expressao"]=array();
     
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
         
         extract($row);
 
-        $enredo_item=array(
+        $expressao_item=array(
             
-            "idenredo"=> $idenredo,
-            "frase"=>$frase,
-            "personagem"=>$personagem,
-
+            "idExpressao"=> $idExpressao,
+            "descricao"=>$descricao,
         );
 
-        array_push($enredo_arr, $enredo_item);
+        array_push($expressao_arr["expressao"], $expressao_item);
     }
 
     http_response_code(200);
-    echo json_encode($enredo_arr);
+    echo json_encode($expressao_arr);
 } else { 
     http_response_code(404);
     echo json_encode(
-        array("message"=>"Frase não encontrada.")
+        array("message"=>"Expressão não encontrada.")
     );
 
 }
