@@ -11,21 +11,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 </head>
-<body >
+<body id="fundo" >
 
 
-
+<audio id="mudo" src="../sounds/music.mp3" autoplay="true" ></audio>
+<audio id="btnsound" src="../sounds/btnsound.mp3"  ></audio>
     
        <div class="geral">
+            <div class="d-flex flex-row-reverse pr-4">
+                <button id= "turn"onClick="mute()" class="btn btn-dark  ">Desligar Música</button>
+            </div>
         <div class="d-flex flex-row-reverse pr-4">
-            <img class="img" src="../img/helio_saudacao.png">
+            <img id="teste" class="img" src="../img/character/helio_saudacao.png">
         </div>
-        <div class="d-flex-inline text ml-auto " >
+        <div class="d-flex-inline text ml-auto ">
             <div class="d-flex flex-row ">
                 <p  id="txt" class="text-dark h4 pt-4 pl-4">COMEÇAR JOGO</p>
             </div>
             <div class="d-flex flex-row-reverse pr-4">
-                <button onClick="next()" class="btn btn-info  ">Próximo</button>
+                <button onClick="next(), btnsound()" class="btn btn-info  ">Próximo</button>
             </div>
         </div>
        </div>

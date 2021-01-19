@@ -1,12 +1,14 @@
 body,html{
     height: 100%;
     margin:0px;
-    background-image: url("http://projetos/entregaGame/frontend/img/b1.jpg");
+    background-image: url("http://projetos/entregaGame/frontend/img/background/b1.jpg");
     background-repeat: no-repeat;
     background-size:cover ; 
     background-position:center; /*Centraliza*/
     background-attachment:fixed; /*Faz com que não tenha rolagem no fundo*/
 }
+
+
 .text{ width: 100%; height: 150px; background-color: rgba(242, 243, 243, 0.945);
     position: absolute;
     bottom: 0;
