@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button, input { 
+  border: 0;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+}
+
+.bg-img{ 
+  height: 100%;
+  background: url('./img/helipaGG.jpg');
+  display: flex;
+  width: 100vw;
+}
+
+ .bloco01{
+  width: 40%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.card{
+  background-color:#48cae4;
+  opacity: 0.9; 
+  height: 70%;  
+  width: 23rem; 
+  border-radius: 15px 0;
+  border: 2px solid #fff;
+}
+
+.card img{
+  opacity: 1 !important;
+  width: 90%;
+  height: 90%;
+}
+
+.person{
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;  
+}
+
+.btn{
+  margin-top: auto;   
+}
+
+.bloco02{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.buttonPlay{ 
+  background-color: transparent ;
+  width: 223px;
+  height: 93px;  
+}
+
+.buttonPlay img{
+  width: 100%;
+  height: 100%;
+}
+
+.title-dados{
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+
+.title-dados {
+  margin: 30px auto;  
+}
+
+.card-box{
+  background-color: #fff;
+  width: 50%;
+  height: 20rem;
+  border-radius: 10px;
+  border: 1px solid #000;
+  margin: 0 auto;  
+  position: relative;
+}
+
+.card-box h4{
+  font-size: 20px;
+  color: #000;
+  width: 80%;
+  margin: 30px auto;  
+  text-align: center;
+  border-bottom: 1px solid #002233;
+}
+
+.button-atualizar{
+ position: absolute;
+ bottom: 10px;
+ right: 10px;
+ color: white; 
+}
+
+
+.status-jogador{ 
+  margin-top: 30px;
+ color: #fff;
+ text-align: center;
+ border-bottom: 2px solid white ;
+}
+
+.status-jogador span{
+  padding: 10px;
+}
+
+.status-jogador img{
+  height: 20px; 
+}
+
+
+footer{
+  height: 40px;
+  background-color:#002233;
+  color: #FFB703 ;
+  text-align:  center;
+ }
+
+ /* responsive */
+@media(max-width: 900px){
+  .bg-img{
+    flex-direction: column-reverse;
+  }
+  .bloco01{
+    width: 100%;
+  }
+  .card{
+    display: none;
+  }
+  .bloco02{
+    width: 100%;
+    }
+    .card-box{
+      width: 80%;
+    }
+    .card-box h4{
+      font-size: 15px;
+    }
+}
