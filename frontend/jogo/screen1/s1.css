@@ -1,0 +1,23 @@
+body,html{
+    height: 100%;
+    margin:0px;
+    background-image: url("../img/background/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ; 
+    background-position:center; /*Centraliza*/
+    background-attachment:fixed; /*Faz com que não tenha rolagem no fundo*/
+}
+
+
+.text{ width: 100%; height: 150px; background-color: rgba(242, 243, 243, 0.945);
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px; 
+    overflow:auto
+}
+
+.next{margin-left: 95%; margin-top:30px; position:absolute;}
+
+.img{ height: 450px;position:absolute;
+    bottom:0;
+    }

@@ -1,0 +1,32 @@
+.logo {
+    width: 85px;
+    padding: 5px;
+}
+
+.navbar{
+    background-color: #219EBC;
+    color: white;
+
+}
+
+
+a {
+    color: #edf4fb !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+}
+
+.material-icons {
+    color: white;
+}
+
+.nav li a {
+    position: relative;
+    display: block;
+
+}
+
+a:hover {
+    color:#FFB703!important;
+}
+
