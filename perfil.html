@@ -1,0 +1,102 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!--CSS/Bootstrap-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+      <!--CSS-->
+     
+      <!--Fonts-->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="perfil.css">
+      <link rel="sortcut icon" href="./img/logo_Megafone_Grande.png" type="image/x-icon"/>
+      <script src="./perfil.js"></script>
+      
+    <title> Perfil</title>
+  </head>
+  
+  <body onload="get()">    
+    <div class="bg-img">
+     <section class="bloco01">
+       <div class="card">
+         <img src="./img/helio_saudacao2.svg" alt="Personagem">
+         <span class="person">Personagem</span>      
+       </div>
+       
+       <div>
+        <form method="POST" action="http://projetos/PerfilSuh/backpathy/api/user/mysqli/mysqlidelete.php">
+          <button type="submit" class="btn btn-danger btn-lg">Deletar Conta</button>
+        </form>
+       </div>
+     </section>
+      
+     <section class="bloco02">
+      <button class="buttonPlay">
+         <img src="./img/play.png" alt="Play">
+      </button>
+
+       <div class="status-jogador">
+        <span>Missão completas:       
+            <img src="./img/check-circle.png" alt="Check">         
+        </span>
+        <span>|</span>
+        <span>
+          Medalhas Recebidas: 
+          <img src="./img/medalha_icon.png" alt="Medalha">
+        </span>
+       </div>
+       <p class="title-dados">Seus dados</p>
+        <div class="card-box" >
+          <h4 id="nome">Marcelo </h4>
+          <h4 id="idade">10 anos </h4>
+          <h4 id="email"> marcelo@gmail.com </h4>
+          <h4 id="apelido">Marcelinho</h4> 
+                          
+
+         <form class="style-form" method="POST" action="http://projetos/PerfilSuh/backpathy/api/user/mysqli/conect.php">
+            <fieldset>
+              <div class="row">
+                <div class="form-group col-lg-8">
+                  <label for="nome">Nome:</label>
+                  <input type="text" id="nome" name="nome" class="form-control border border-dark ">
+                </div>  
+                <br>
+                <div class="form-group col-lg-8">        
+                  <label for="nascimento">Nascimento:</label>
+                  <br>
+                  <input type="text" id="nascimento" name="dataNascimento" class="form-control border border-dark">
+               </div>
+               <br>
+                <div class="form-group col-lg-8">       
+                  <label for="email">Email:</label>
+                  <input type="text" id="email" name="email" class="form-control border border-dark">
+                </div>
+                <br>
+                <div class="form-group col-lg-8">          
+                  <label for="apelido">Apelido:</label>
+                  
+                  <input type="text" id="apelido" name="apelido" class="form-control border border-dark">
+                </div>
+                <br>      
+              <button  type="submit" class="button-atualizar btn btn-warning btn-lg">Atualizar</button> 
+            </div>  
+          <fieldset>
+         </form>         
+        </div>
+
+     </section>
+    </div>
+   
+   <footer>
+    <p>FavelAção 2021</p>
+   </footer>
+    
+   
+   <!--JavaScript/Bootstrap-->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
