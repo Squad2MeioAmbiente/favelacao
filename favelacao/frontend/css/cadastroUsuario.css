@@ -36,10 +36,18 @@ main div:nth-child(2) {
   background-color:#fff ;
 }
 
-label, h3 {
+label {
   /* background-color: black; */
-  color: black;
+  /* color: black; */
+  color: #219EBC;
   margin-top: 10px;
+}
+
+.titulo {
+  /* background-color: black; */
+  /* color: black; */
+  color: white;
+  margin-top: 5px;
 }
 
 .boton {
@@ -72,7 +80,7 @@ label, h3 {
     /* color: #bdb5b5; */
     /* color: #8ecae6; */
     color: #219EBC;
-
+    
     /* color: #023047 !important; */
 
     /* color: #FFF; */
