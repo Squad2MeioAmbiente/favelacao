@@ -29,7 +29,13 @@
     <img  class="personagem" src="./frontend/img/helio_saudacao2.svg" alt="Hélio">  
     <div class="textoBanner">
       <img   src="./frontend/img/textoBanner2.svg" alt="Texto">
+      <?php if (!isset($_SESSION)) session_start();
+        if (!isset($_SESSION['user']['email'])){?>
       <a href=./frontend/login.php><button class="buttonJogar">JOGAR</button></a>
+
+      <?php  }else{?>
+      <a href=./frontend/jogo/screen1/s1.html><button class="buttonJogar">JOGAR</button></a>
+    <?php }?>
     </div> 
   </div>
   <div class="textDescricao">
