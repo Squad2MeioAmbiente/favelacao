@@ -44,6 +44,8 @@ body {
     /* background-color: black; */
     color: black;
     margin-top: 20px;
+    color: #219EBC;
+
 }
 
   /* main div:nth-child(3) {
@@ -86,9 +88,10 @@ body {
   font-size: 12px;
   line-height: 20px;
   /* color: #bdb5b5; */
-  /* color: #8ecae6; */
+  color: #219EBC;
+
   
-  color: #023047 !important;
+  /*color: #023047 !important;*/
 
   /* color: #FFF; */
   transition: 0.2s;
