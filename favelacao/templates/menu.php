@@ -44,6 +44,9 @@
 						<a class="nav-link" href="./frontend/perfil.php">Perfil</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="">Ajuda</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="./backend/api/user/encerrars.php">Sair</a>
 					</li>
 				</ul>
