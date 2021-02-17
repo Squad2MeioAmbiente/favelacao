@@ -57,7 +57,7 @@
         
           <div class="form-group col-sm">
             <label >Login</label>
-            <input type="email" name="email" class="form-control" id="" maxlength="50" placeholder="Seu email" required/>
+            <input type="email" name="email" value="<?php echo $_SESSION['user']['email']; ?>" class="form-control" id="" maxlength="50" placeholder="Seu email" required/>
           
             <label>Senha</label>
             <input type="password" name="senha" minlength="8" class="form-control" id="" placeholder="Insira sua senha" required/>
