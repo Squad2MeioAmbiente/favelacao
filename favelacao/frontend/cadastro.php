@@ -37,7 +37,7 @@
             
             <div class="form-group">
                 <label>Nome:</label>
-                <input type="text" name="nome" id="nome" class="form-control" maxlength="25"  minlength="5"  class="form-control" pattern="^[^-\s][a-zA-ZÀ-ú ]*" placeholder="Digite aqui:" required/>
+                <input type="text" name="nome" id="nome" class="form-control" maxlength="25"  minlength="5"  class="form-control" pattern="^[^-\s][a-zA-ZÀ-ú ]*" placeholder="Digite seu nome" required/>
             
                 <label>Data de nascimento:</label>
                 <input type="date" name="dataNascimento" maxlength="10" pattern="dd-mm-yyyy" min="1900-01-01" max="2020-01-30" class="form-control"/> 
