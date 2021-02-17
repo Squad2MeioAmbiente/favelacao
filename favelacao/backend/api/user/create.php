@@ -41,6 +41,7 @@
     }
     else{
         echo "<script>
+                alert ('Dados não inseridos!')
                 window.location.href='../../../frontend/cadastro.php'
             </script>";
     } 
