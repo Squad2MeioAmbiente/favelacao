@@ -1,0 +1,126 @@
+body {
+  
+    /* background: #f06d06; */
+    background:#219EBC ;
+    /* background-color: #023047; */
+    font-size: 80%;
+    width: 100%;
+    margin-top: 170px !important;
+    margin-bottom: 90px;
+  }
+  
+  html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium; 
+  }
+
+  main {
+    background: white;
+    background:#219EBC ;
+
+    margin: 8px 0;
+    /* padding: 10px; */
+  }
+  
+  main div {
+    /* background: black; */
+    /* background: #fff; */
+    /* margin: 0 auto; */
+    color: white;
+    /* padding: 8px; */
+    margin: 2px auto;
+  }
+  
+  /* main div:nth-child(1) {
+    width: 200px;
+  } */
+  main div:nth-child(2) {
+    width: 370px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 5px 222px #8ECAE6; 
+    background-color:#fff ; 
+  }
+  label ,h3 {
+    /* background-color: black; */
+    color: black;
+    margin-top: 20px;
+}
+
+  /* main div:nth-child(3) {
+    width: 125px;
+  } */
+  .logimg {
+    width: 180px;
+    height: 100px;
+    /* background-color: red; */
+    /* justify-content:center; */
+    /* justify-content: center;  */
+}
+
+.boton {
+  border: none;
+  outline: none;
+  height: 35px;
+  color: #fff;
+  background: #fb8500;
+  border-radius: 20px;
+  transition: 0.2s;
+  margin-right: 20px;
+  margin-top:20px;
+}
+
+.boton:hover {
+    cursor: pointer;
+    /* background: #ff4d4d; */
+
+    background: #ffb703;
+    color:#023047;
+    transition: 0.2;
+}
+
+.aLogin {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  /* color: #bdb5b5; */
+  /* color: #8ecae6; */
+  
+  color: #023047 !important;
+
+  /* color: #FFF; */
+  transition: 0.2s;
+}
+
+.aLogin:hover {
+  transition: 0.2s;
+  /* color: #ff4d4d; */
+  color: red;
+  /* color: #023047; */
+
+}
+
+.corbug  {
+  background: #219EBC;
+  /* margin:100px; */
+}
+
+.iconInstagram, .iconGit{
+  height: 20px;
+  margin: 20px;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: -50px;
+  height: 50px;
+  color:#FFB703; 
+  background-color: #023047;
+  position: fixed; bottom: 0;
+  justify-content: center;
+}
+
+
+
