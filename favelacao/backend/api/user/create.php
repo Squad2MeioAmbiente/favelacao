@@ -41,7 +41,7 @@
     }
     else{
         echo "<script>
-                alert ('Dados não inseridos!')
+                alert ('Dados não inseridos! A senha e a confirmação devem ser iguais')
                 window.location.href='../../../frontend/cadastro.php'
             </script>";
     } 
