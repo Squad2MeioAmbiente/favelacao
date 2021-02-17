@@ -1,0 +1,277 @@
+body{
+  margin-top: 91px;
+}
+
+.logo { 
+  width: 85px !important;
+  padding: 5px !important;
+}
+
+
+.navbar{
+  background-color: #219EBC !important;
+  color: white !important;
+  width: 100%;
+}
+
+
+a {
+  color: #edf4fb !important;
+  text-decoration: none !important;
+  background-color: transparent !important;
+}
+
+.material-icons {
+  color: rgb(167, 144, 144) !important;
+}
+
+.nav li a {
+  /* position: relative !important; */
+  /* display: block !important; */
+  position: fixed; top: auto !important;
+}
+
+a:hover {
+  color:#FFB703!important;
+}
+
+
+/* aqui começam as configurações da página perfil */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row{
+    margin-left: 0;
+    height: 20px;
+}
+
+.form-group {
+  font-size: 15px;
+  margin: 0 0 3px ;
+  padding: 5px;
+}
+
+button, input { 
+  border: 0;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+}
+
+.bg-img{ 
+  height: 100%;
+  background: url('../img/helipaGG.jpg');
+  display: flex;
+  width: 100vw;
+}
+
+.bloco01{
+  width: 50%;
+  padding: 12px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+}
+
+.card{
+  margin-top: 50px;
+  background-color:#48cae4;
+  opacity: 0.9; 
+  height: 75%;  
+  width: 20rem; 
+  border-radius: 15px 0;
+  border: 2px solid #fff;
+}
+
+.card img{
+  opacity: 1 !important;
+  width: 90%;
+  height: 90%;
+}
+
+.person{
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;  
+}
+
+.btn{
+  margin-top: 10px;   
+}
+
+.bdelete{
+  margin-bottom: 20px;
+}
+
+.bloco02{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  width: 60%;
+  height: 90%;
+}
+
+.buttonPlay{ 
+  background-color: transparent ; 
+  width: 223px;
+  height: 93px;  
+}
+
+.buttonPlay img{
+  width: 100%;
+  height: 100%;
+}
+
+.title-dados{
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.title-dados {
+  margin: 30px auto;  
+}
+
+.style-form{
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  margin: 0 auto; 
+  margin-top: 30px; 
+  position: absolute;
+  margin-top: 0; 
+} 
+
+.card-box {
+  background-color: white;
+  width: 60%;
+  height: 21rem;
+  border-radius: 10px;
+  border: 1px solid #000;
+  margin: 0 auto;  
+  position: relative;
+  margin-top: -50px; 
+}
+
+.card-box h4{
+  font-size: 15px;
+  color: #000;
+  width: 60%;
+  margin: 12px auto;  
+  text-align: center;  
+  border-bottom: 1px solid #002233; 
+}
+
+.form-control{
+  padding: 0;
+  margin-left: 30px;
+  width: 80%;
+  height: 100%;
+}
+
+.card-box {
+  margin-top: 0;
+}
+
+.card-box label{
+  font-size: 15px;
+  color: #000;
+  margin: 1px auto;
+  padding-left: 10px;
+  margin-top: 10px; 
+}
+
+.button-atualizar{
+  position: relative;
+  margin: 12px;
+  margin-left: 2%;
+  color: white; 
+  padding-bottom: -900px;
+}
+
+.status-jogador{ 
+  margin-top: 30px;
+  color: #fff;
+  text-align: center;
+  border-bottom: 2px solid white ;
+}
+
+.status-jogador span{
+  padding: 10px;
+}
+
+.status-jogador img{
+  height: 20px; 
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: -50px;
+  height: 50px;
+  color:#FFB703; 
+  background-color: #023047;
+  position: fixed; bottom: 0;
+  justify-content: center;
+}
+
+.iconInstagram, .iconGit{
+  height: 20px;
+  margin: 20px;
+}
+
+.form-group input{
+  margin-left: 10px;
+  width: 95%;
+  height: 30px;
+}
+
+ /* responsive */
+@media(max-width: 573px){
+  .bg-img{
+    flex-direction: column-reverse;
+  }
+  .bloco01{
+    width: 100%;
+  }
+  .card{
+    display: none;
+  }
+  .bloco02{
+    width: 100%;
+  }
+  .card-box{
+    width: 80%;
+    height: 21rem;
+  }
+ 
+  .card-box h4{
+    font-size: 15px;
+  }
+
+  .style-form {
+    width: 100%;
+    height: 50%;
+  }
+  .buttonPlay img{
+    width: 50%;
+    height: 50%;
+    margin-top:20%;
+  }
+}
+
+
+
