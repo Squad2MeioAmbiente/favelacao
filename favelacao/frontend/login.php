@@ -51,7 +51,7 @@
   </div>
 
   <div class="card-body" id="telalogin">
-         <img class="card-img-top ml-5 logimg" src="./img/logo_favelacao.png" alt="Imagem de capa do card">
+         <img class="card-img-top logimg" src="./img/logo_favelacao.png" alt="Imagem de capa do card">
 
         <form action=".././backend/api/user/conect_login.php" name="#" method="post"  class="needs-validation">
         
