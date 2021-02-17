@@ -25,13 +25,13 @@
         ?>
       </header>
     <main>
-        <div>
+        <div class="container-fluid text-center pb-2 titulo">
           <!-- I'm an element that is block-like with my siblings and we're centered in a row. -->
+          <h3>Faça seu cadastro</h3>
 
         </div>
 
         <div class="card-body">
-            <h3>Faça seu cadastro</h3>
           <form action="../backend/api/user/create.php" method="POST">
             <!-- <h3>Faça seu cadastro</h3> -->
             
