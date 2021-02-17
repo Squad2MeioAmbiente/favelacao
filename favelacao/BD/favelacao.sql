@@ -219,8 +219,6 @@ ALTER TABLE `personagens`
 --
 -- Índices para tabela `usuarios`
 --
-ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
