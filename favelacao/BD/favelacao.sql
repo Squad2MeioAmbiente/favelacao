@@ -48,7 +48,7 @@ INSERT INTO `mural` (`nome`, `imagem`) VALUES
 ('João', 'mural1.jpg'),
 ('Anna', 'mural1.jpg'),
 ('José', 'mural1.jpg'),
-('Guilherme', 'mural1.jpg'),
+('Guilherme', 'mural1.jpg');
 --
 -- Estrutura da tabela `enredo`
 --
