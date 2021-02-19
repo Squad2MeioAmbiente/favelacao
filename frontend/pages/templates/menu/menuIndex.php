@@ -7,7 +7,7 @@
 
 	<nav class="navbar fixed-top navbar-expand-lg navbar-fixed-top hover">
 		<div class="container">
-			<a class="navbar-brand" href="../">
+			<a class="navbar-brand" href="./">
 				<img src="<?php $_SERVER['SERVER_NAME'] ?>/favelacao/frontend/pages/templates/menu/img/logo_favelacao.png" class="logo" alt="FavelAção">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links-menu"
