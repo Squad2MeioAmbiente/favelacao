@@ -30,7 +30,7 @@
     
     else{
         echo "<script>
-            window.location.href='../../../frontend/pages/cadastro.php'
+              window.location.href='../../../frontend/pages/contato.php'
         </script>";
     
     } 
