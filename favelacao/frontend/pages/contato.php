@@ -34,7 +34,7 @@
    
        
 
-        <form action="./conectContato.php" name="" id="idformContato" method="post"  class="needs-validation" >
+        <form action="../../backend/api/contato/creat.php" name="" id="idformContato" method="post"  class="needs-validation" >
         
           <div class="form-group col-sm">
                 <label >Nome*</label>
