@@ -1,0 +1,134 @@
+body {
+  
+  background:#219EBC ;
+  margin-top: 140px !important;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-size: medium; 
+
+}
+.titulo {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  
+  
+}
+h1 {
+  font-weight: bold;
+}
+.imgContato {
+  width: 60px;
+  padding-right: 20px;
+  padding-bottom: 2px;
+
+}
+
+main {
+  /* background:#219EBC ; */
+
+  margin: 8px 0;
+}
+
+main div {
+  color: #219EBC;
+  margin: 2px auto;
+
+  
+}
+
+main div:nth-child(2) {
+  width: 500px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 1px 5px 222px #8ECAE6; 
+  background-color:#fff ; 
+}
+
+label ,h3 {
+  /* background-color: black; */
+  color:#219EBC;
+  margin-top: 20px;
+}
+
+.logimg {
+  width: 180px;
+  height: 100px;
+}
+
+.card {
+  width: 500px;
+  border-radius: 50px;
+  background: #fff;
+  border: none;
+ 
+}
+
+.neo-button {
+  width: 50px;
+  height: 50px;
+  outline: 0 !important;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  margin-left: 350px;
+  border-radius: 50%;
+  background-color: #fff;
+  ;
+
+}
+
+
+.fa-edit {
+  color: #fff;
+  font-size: 30px !important;
+
+}
+
+.fa-trash {
+  color: tomato;
+  font-size: 30px !important;
+  
+}
+
+.boton {
+  border: none;
+  outline: none;
+  height: 38px;
+  width: 100%;
+  background: #fb8500;
+  border-radius: 15px;
+  transition: 0.2s;
+  margin-right: 20px;
+  margin-top:20px;
+  font-family: 'Roboto', sans-serif;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 600px) {
+  main div:nth-child(2) {
+    width: 400px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 5px 222px #8ECAE6; 
+    background-color:#fff ;
+  }
+  .neo-button {
+    width: 50px;
+    height: 50px;
+    outline: 0 !important;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    margin-left: 280px;
+    border-radius: 50%;
+    background-color: #fff;
+    ;
+  
+  }
+}
+
+
