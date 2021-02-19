@@ -109,7 +109,7 @@
   
 
   <?php
-      include("./pages/templates/rodape/rodape.php")
+      include("./pages/templates/rodape/rodapeIndex.php")
   ?>
           
          
