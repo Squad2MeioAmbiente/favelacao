@@ -20,8 +20,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
@@ -31,7 +29,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/perfil.js"></script>
     
-    <title>Pagina de Perfil</title>
+    <title>Página de Perfil</title>
   </head>
 
 
@@ -42,65 +40,55 @@
     ?>
 
       <div class="titulo">
-       <h1><img class="imgContato" src="../img/iconPerfil.png" alt="atendimento">Perfil</h1><br/>
+       <h1><img class="imgContato" src="../img/iconPerfil.png" alt="atendimento">Perfil</h1>
       </div>
-       <main>
   <div class="corbug">
  
   </div>
-
-
-
+  <div class="formulario"> 
+  <div class="card-body h-25">
   <div class="container d-flex justify-content-center">
-    <div class="card p-4 py-8">
-    <div class="text-center"> <img src="../img/<?php echo $_SESSION['user']['imgAvatar'];?>" alt="Avatar" width="100" class="rounded-circle">
-            <h3 class="mt-2"><?php echo $_SESSION['user']['apelido']; ?></h3> 
-
-            
-    <form method="POST" action="../../backend/api/user/updat.php">
-        
- 
-  <div class="form-group row">
-  <input type="hidden" id="id" name="id"  value="<?php echo $_SESSION['user']['id']; ?>" required/>
- 
-  
-      <label for="nome">Nome</label>
-    <input type="text" class="form-control"  id="nome" name="nome"  value="<?php echo $_SESSION['user']['nome']; ?>" placeholder="Nome">
-  
-    <label for="email">Email: </label>
-    <input type="email" class="form-control"id="email" name="email" value="<?php echo $_SESSION['user']['email']; ?>" aria-describedby="emailHelp" placeholder="Email">
-
-  
-    <label for="nascimento">Data de Nascimento: </label>
-
-    <input class="form-control"  type="date" value="<?php echo $_SESSION['user']['dataNascimento']; ?>" id="nascimento" name="dataNascimento">
-
-    <label for="apelido">Apelido</label>
-    <input type="text" class="form-control" id="apelido" name="apelido" value="<?php echo $_SESSION['user']['apelido']; ?>" placeholder="apelido">
-    <input type="hidden" id="id" name="imgAvatar" value="<?php echo $_SESSION['user']['imgAvatar']; ?>" required/>
-
-    </div>
-    
-    <button type="submit" class="btn btn-block boton"> Editar </button>
-                 
-     </div>
-
-          </form>  
-
-          <form method="POST" action="./validacoes/validacaoPerfil.html">
-                  <button type="submit" class="neo-button"><i class="fa fa-trash"></i></button>
-                  </form>
-            <br/>
-       
+      <div class=" p-4 py-8">
+        <div class="text-center"> <img src="../img/<?php echo $_SESSION['user']['imgAvatar'];?>" alt="Avatar" width="100" class="rounded-circle">
+          <h3 class="mt-2"><?php echo $_SESSION['user']['apelido']; ?></h3> 
         </div>
     </div>
-</div>
-       
+  </div>
+   
+        <form action="../../backend/api/user/updat.php" name="" id="idformContato" method="post"  class="needs-validation" >
+        
+          <div class="form-group col-sm">
+            <input type="hidden" id="id" name="id" class="form-control" value="<?php echo $_SESSION['user']['id']; ?>" required>
 
-    <div class="corbug">
+            <label >Nome</label>
+            <input type="text" class="form-control"  id="nome" name="nome"  value="<?php echo $_SESSION['user']['nome']; ?>" required>
+
+            <label >E-mail</label>
+            <input type="email" name="email" class="form-control" id="nome" value="<?php echo $_SESSION['user']['email']; ?>" maxlength="50" value="<?php echo $_SESSION['user']['email']; ?>"  required>
+          
+            <label>Data de Nascimento</label>
+            <input type="date" name="dataNascimento" class="form-control" id="assunto" value="<?php echo $_SESSION['user']['dataNascimento']; ?>" required>
+            
+            <label>Apelido</label>
+            <input name="apelido" class="form-control" value="<?php echo $_SESSION['user']['apelido']; ?>" id="apelido" required></input>
+            
+            <input type="hidden" name="imgAvatar" value="<?php echo $_SESSION['user']['imgAvatar']; ?>" required/>
+            <button type="submit" class="btn btn-block boton">Editar</button>
+          </div>    
+        </form>
+        
+          <form method="POST" action="./validacoes/validacaoPerfil.html">
+            <button type="submit" class="btn neo-button"><i class="fa fa-trash"></i></button>
+          </form>
+      
+          <br/>
+      </div>
+   </div>      
+   <br/><br/>
+
+    <!-- <div class="corbug">
       <br><br><br><br><br><br><br>
-    </div>
-  </main>
+    </div> -->
   
   <footer>
     <?php 
