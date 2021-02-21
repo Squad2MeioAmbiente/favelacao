@@ -110,7 +110,16 @@ label {
   display: inline-block;
 }
 
+.rounded{
+  margin-left:60px;
+  margin-right:60px;
+}
 
+.btnimg{
+  width: 200px;
+  height: 200px;
+
+}
 @media screen and (max-width: 600px) {
   main div:nth-child(2) {
     width: 350px;
@@ -119,3 +128,32 @@ label {
     background-color:#fff ;
   }
 }
+
+@media screen and (max-width: 320px) {
+  main div:nth-child(2) {
+    width: 300px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 5px 222px #8ECAE6; 
+    background-color:#fff ;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  main div:nth-child(2) {
+    width: 270px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 5px 222px #8ECAE6; 
+    background-color:#fff ;
+  }
+}
+
+
+@media screen and (width: 768px) {
+  main div:nth-child(2) {
+    width: 748px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 5px 222px #8ECAE6; 
+    background-color:#fff ;
+  }
+}
+
