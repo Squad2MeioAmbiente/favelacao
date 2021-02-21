@@ -1,4 +1,3 @@
- 
 <?php
   
   if (!isset($_SESSION)) session_start();
@@ -20,8 +19,9 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
   <head>
-    <!-- Meta tags Obrigatórias -->
+    <!-- Meta tags Obrigatórias -->  
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -35,6 +35,8 @@
     <title>Login</title>
   </head>
 
+    
+
 
   <body>
       <header>  
@@ -42,41 +44,48 @@
         <?php
           include("./templates/menu/menu.php")
         ?>
-    
-       </header>
 
-  <main>
+      </header>
+
   <div class="corbug">
-  </div>
 
-  <div class="card-body" id="telalogin">
-         <img class="card-img-top logimg" src="../img/logo_favelacao.png" alt="Imagem de capa do card">
+    <br><br><br><br><br>
 
-        <form action="../../backend/api/user/conect_login.php" name="#" method="post"  class="needs-validation">
+  </div>  
+
+
+<div class="form-signin">  
+  <div class="card m-3 mt-6">
+    <div class="card-body sombra">
+            <img class="card-img-top logimg" src="../img/logo_favelacao.png" alt="Imagem de capa do card">
+      <form action="../../backend/api/user/conect_login.php" name="#" method="post"  class="needs-validation">
+            
+    
+              <label >Login</label>
+              <input type="email" name="email" class="form-control" id="" maxlength="50" placeholder="Seu email" required/>
+            
+              <label>Senha</label>
+              <input type="password" name="senha" minlength="8" class="form-control" id="" placeholder="Insira sua senha" required/>
+            
+              <button type="submit" class="btn btn-block boton">Entrar</button>
         
-          <div class="form-group col-sm">
-            <label >Login</label>
-            <input type="email" name="email" class="form-control" id="" maxlength="50" placeholder="Seu email" required/>
-          
-            <label>Senha</label>
-            <input type="password" name="senha" minlength="8" class="form-control" id="" placeholder="Insira sua senha" required/>
-          
-            <button type="submit" class="btn btn-block boton">Entrar</button>
-          </div>
-  
-          <a class="aLogin" href="./cadastro.php"> Ainda não tem conta? </a>
-
-        </form> 
-   </div>      
-
-    <div class="corbug">
-
-      <br><br><br><br><br><br><br>
+    
+            <a class="aLogin" href="./cadastro.php"> Ainda não tem conta? </a>
+      </form>   
     </div>
-  </main>
+  </div>
+</div>
+
+<div class="corbug">
+
+<br><br><br><br>
+
+</div>  
+
+
 
 <footer>
-
+         
   <?php
       include("./templates/rodape/rodape.php")
   ?>
