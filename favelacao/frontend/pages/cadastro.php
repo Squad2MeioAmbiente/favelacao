@@ -102,11 +102,9 @@
       </main>
 
   <footer>
-
       <?php
         include("./templates/rodape/rodape.php")
       ?>
-
   </footer>
 
  
