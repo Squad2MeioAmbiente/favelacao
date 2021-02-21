@@ -1,9 +1,7 @@
 body {
-  
   background:#219EBC ;
   margin-top: 140px !important;
 }
-
 html, body {
   font-family: 'Roboto', sans-serif;
   font-size: medium; 
@@ -14,12 +12,12 @@ html, body {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
-  
-  
 }
+
 h1 {
   font-weight: bold;
 }
+
 .imgContato {
   width: 60px;
   padding-right: 20px;
@@ -28,27 +26,30 @@ h1 {
 }
 
 main {
-  /* background:#219EBC ; */
-
   margin: 8px 0;
 }
 
 main div {
-  color: #219EBC;
-  margin: 2px auto;
-
-  
+  color: white;
+  margin: 2px auto; 
 }
 
 main div:nth-child(2) {
-  width: 500px;
+  width: 370px;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 1px 5px 222px #8ECAE6; 
   background-color:#fff ; 
 }
 
-label ,h3 {
-  /* background-color: black; */
+.formulario {
+  width:40%;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 1px 5px 222px #8ECAE6; 
+  background-color:#fff ; 
+  justify-content: center;
+  margin:auto;
+}
+label, h3 {
   color:#219EBC;
   margin-top: 20px;
 }
@@ -58,12 +59,46 @@ label ,h3 {
   height: 100px;
 }
 
-.card {
-  width: 500px;
-  border-radius: 50px;
-  background: #fff;
+.boton {
   border: none;
- 
+  outline: none;
+  height: 35px;
+  color: #fff;
+  background: #fb8500;
+  border-radius: 20px;
+  transition: 0.2s;
+  margin-right: 20px;
+  margin-top:20px;
+}
+
+.boton:hover {
+  cursor: pointer;
+  /* background: #ff4d4d; */
+  background: #ffb703;
+  color:#023047;
+  transition: 0.2;
+}
+
+.aLogin {
+font-weight: bold;
+text-decoration: none;
+font-size: 12px;
+line-height: 20px;
+/* color: #bdb5b5; */
+/* color: #8ecae6; */
+
+color: #023047 !important;
+
+/* color: #FFF; */
+transition: 0.2s;
+}
+
+.aLogin:hover {
+transition: 0.2s;
+/* color: #ff4d4d; */
+color: red;
+/* color: #023047; */
+
 }
 
 .neo-button {
@@ -74,41 +109,17 @@ label ,h3 {
   color: #fff;
   font-size: 15px;
   border: none;
-  margin-left: 350px;
+  margin-left: 87%;
   border-radius: 50%;
   background-color: #fff;
-  ;
-
-}
-
-
-.fa-edit {
-  color: #fff;
-  font-size: 30px !important;
-
 }
 
 .fa-trash {
   color: tomato;
   font-size: 30px !important;
-  
 }
 
-.boton {
-  border: none;
-  outline: none;
-  height: 38px;
-  width: 100%;
-  background: #fb8500;
-  border-radius: 15px;
-  transition: 0.2s;
-  margin-right: 20px;
-  margin-top:20px;
-  font-family: 'Roboto', sans-serif;
-  color: whitesmoke;
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   main div:nth-child(2) {
     width: 400px;
     border-radius: 20px 20px 20px 20px;
@@ -123,12 +134,17 @@ label ,h3 {
     color: #fff;
     font-size: 15px;
     border: none;
-    margin-left: 280px;
+    margin-left: 80%;
     border-radius: 50%;
-    background-color: #fff;
-    ;
-  
+    background-color: #fff; 
   }
+  .formulario {
+    width:90%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 5px 222px #8ECAE6; 
+    background-color:#fff ; 
+    justify-content: center;
+    margin:auto;
+  }
+
 }
-
-
