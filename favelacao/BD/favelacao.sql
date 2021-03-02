@@ -31,6 +31,7 @@ CREATE TABLE `contato` (
   `email` varchar(255) NOT NULL,
   `assunto` varchar(200) DEFAULT NULL,
   `mensagem` varchar(800) DEFAULT NULL,
+  `data` datetime default now(), 
   PRIMARY KEY (`idcontato`))
 ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -126,7 +127,17 @@ INSERT INTO `enredo` (`idenredo`, `frase`, `IdPersonagem`) VALUES
 (60, 'Nos vemos na próxima fase!', 4);
 
 
-
+CREATE TABLE `missao` (
+  `idmissao` int(11) NOT NULL AUTO_INCREMENT,
+  `tituloMissao` varchar(255) NOT NULL,
+  `missao` varchar(500) NOT NULL,
+  `personagem` varchar(255) NOT NULL,
+  `expressao` varchar(20) DEFAULT NULL,
+  `posicao` varchar(255) NOT NULL,
+  `cenario` varchar(55) NOT NULL,
+  `data` datetime default now(), 
+  PRIMARY KEY (`idmissao`))
+  ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -188,10 +199,118 @@ CREATE TABLE `usuarios` (
   `telefone` varchar(20) DEFAULT NULL,
   `senha` varchar(34) NOT NULL,
   `confirmarSenha` varchar(34) NOT NULL,
+  `categoriaSecreta` varchar(55) NOT NULL,
+  `respSecreta` varchar(55) NOT NULL,
   `apelido` varchar(255) NOT NULL,
   `imgAvatar` varchar(400) DEFAULT NULL,
+  `data` datetime default now(), 
   PRIMARY KEY (`id`))
   ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `medalhas`;
+CREATE TABLE IF NOT EXISTS `medalhas` (
+  `idmedalhas` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(45) DEFAULT NULL,
+  `medalha1` varchar(45) DEFAULT NULL,
+  `medalha2` varchar(45) DEFAULT NULL,
+  `medalha3` varchar(45) DEFAULT NULL,
+  `medalha4` varchar(45) DEFAULT NULL,
+  `medalha5` varchar(45) DEFAULT NULL,
+  `medalha6` varchar(45) DEFAULT NULL,
+  `medalha7` varchar(45) DEFAULT NULL,
+  `medalha8` varchar(45) DEFAULT NULL,
+  `medalha9` varchar(45) DEFAULT NULL,
+  `medalha10` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idmedalhas`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `medalhas`
+--
+
+INSERT INTO `medalhas` (`idmedalhas`, `email`, `medalha1`, `medalha2`, `medalha3`, `medalha4`, `medalha5`, `medalha6`, `medalha7`, `medalha8`, `medalha9`, `medalha10`) VALUES
+(1, 'devd8727@gmail.com', 'TRUE', 'TRUE', 'TRUE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE'),
+(2, 'testemedalhas@gmail.com', 'TRUE', 'TRUE', 'TRUE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE');
+
+
+
+
+DROP TABLE IF EXISTS `savegame`;
+CREATE TABLE IF NOT EXISTS `savegame` (
+  `idsavegame` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(100) DEFAULT NULL,
+  `missao1` varchar(45) DEFAULT NULL,
+  `missao2` varchar(45) DEFAULT NULL,
+  `missao3` varchar(45) DEFAULT NULL,
+  `missao4` varchar(45) DEFAULT NULL,
+  `missao5` varchar(45) DEFAULT NULL,
+  `missao6` varchar(45) DEFAULT NULL,
+  `missao7` varchar(45) DEFAULT NULL,
+  `missao8` varchar(45) DEFAULT NULL,
+  `missao9` varchar(45) DEFAULT NULL,
+  `missao10` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idsavegame`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `savegame`
+--
+
+INSERT INTO `savegame` (`idsavegame`, `email`, `missao1`, `missao2`, `missao3`, `missao4`, `missao5`, `missao6`, `missao7`, `missao8`, `missao9`, `missao10`) VALUES
+(1, 'devd8727@gmail.com', 'TRUE', 'TRUE', 'TRUE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE'),
+(2, 'testando@gmail.com', 'TRUE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE'),
+(3, 'aaaaaaaaaa@gmail.com', 'TRUE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE'),
+(4, 'kkk@gmail.com', 'TRUE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE'),
+(5, 'testemedalhas@gmail.com', 'TRUE', 'TRUE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `teste`
+--
+
+DROP TABLE IF EXISTS `teste`;
+CREATE TABLE IF NOT EXISTS `teste` (
+  `idteste` int(11) NOT NULL AUTO_INCREMENT,
+  `testecol` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idteste`)
+) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `teste`
+--
+
+INSERT INTO `teste` (`idteste`, `testecol`) VALUES
+(1, ''),
+(2, ''),
+(3, ''),
+(4, 'TRUE'),
+(5, 'TRUE'),
+(6, 'TRUE'),
+(7, 'TRUE'),
+(8, 'TRUE'),
+(9, 'TRUE'),
+(10, 'TRUE'),
+(11, 'TRUE'),
+(12, 'TRUE'),
+(13, 'TRUE'),
+(14, 'TRUE'),
+(15, 'TRUE'),
+(16, 'TRUE'),
+(17, 'TRUE'),
+(18, 'TRUE'),
+(19, 'TRUE'),
+(20, 'TRUE'),
+(21, 'TRUE'),
+(22, 'TRUE'),
+(23, 'TRUE'),
+(24, 'TRUE'),
+(25, 'TRUE'),
+(26, 'TRUE'),
+(27, 'TRUE'),
+(28, 'TRUE');
 
 --
 -- Índices para tabelas despejadas
@@ -239,8 +358,8 @@ ALTER TABLE `personagens`
 --
 -- AUTO_INCREMENT de tabela `usuarios`
 --
-ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+-- ALTER TABLE `usuarios`
+--   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- Restrições para despejos de tabelas

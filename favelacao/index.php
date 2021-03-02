@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
   <!--CSS-->
   
-  <link rel="stylesheet" href="frontend/css/style.css">
+  <link rel="stylesheet" href="./frontend/css/style.css">
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
 <header>
 
 <?php
-  include("./templates/menu.php")
+  include("./templates/menu/menuIndex.php")
 ?>
 
 </header>
@@ -31,21 +31,22 @@
       <img   src="./frontend/img/textoBanner2.svg" alt="Texto">
       <?php if (!isset($_SESSION)) session_start();
         if (!isset($_SESSION['user']['email'])){?>
-      <a href=./frontend/login.php><button class="buttonJogar">JOGAR</button></a>
+      <a href="./frontend/pages/login.php"><button class="buttonJogar">JOGAR</button></a>
 
       <?php  }else{?>
-      <a href=./frontend/jogo/screen1/s1.html><button class="buttonJogar">JOGAR</button></a>
+      <a href="./jogo/selectMission.php"><button class="buttonJogar">JOGAR</button></a>
     <?php }?>
     </div> 
   </div>
   <div class="textDescricao">
     <h1 class="tituloFavelacao">O que é o FavelAção? </h1>
     <p class="descricaoFavelacao">
-      Os moradores de uma comunidade estão tendo um grande problema com lixo ao céu aberto. <br>
-     Para solucionar esse problema Hélio e sua turma decidem ajudar, porém sua turma é pequena, <br>
-     então Hélio recruta mais crianças no FavelAção para combater esse mal.
-      <br><br>
-     Você é a próxima criança, topa fazer parte dessa aventura?
+    Já pensou aprender brincando?<br/><br/>
+    É exatamente o que o Jogo FavelAção pode fazer, conclua as missões que o Hélio vai <br/>
+    te indicar ao final de cada fase e ganhe medalhas!<br/>
+    Seja o que mais acumula premiações, ficando no topo do nosso ranking, <br/>
+   não fique fora dessa, chame seus amiguinhos e se divirtam!  <br/>
+
     </p>
   </div>
   <div class="premio">
@@ -102,11 +103,13 @@
         </div> -->
       </div>
     </div>
+    <a href="./frontend/pages/sobreJogo.php" target="_blank" title="Contato"><h3>+ Ver mais</h3></a>
+    
   </div>
   
 
   <?php
-      include("./templates/rodape.php")
+      include("./templates/rodape/rodapeIndex.php")
   ?>
           
          

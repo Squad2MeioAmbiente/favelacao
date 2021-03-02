@@ -21,7 +21,7 @@ if($user->delete()){
   
     http_response_code(200);
     session_destroy();
-    header("Location: ../../../frontend/login.php?delete=true"); 
+    header("Location: ../../../frontend/pages/login.php?delete=true"); 
     exit;
 }
   

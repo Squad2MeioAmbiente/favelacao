@@ -11,8 +11,13 @@ class User {
     public $telefone;
     public $senha;
     public $confirmarSenha;
+    public $categoriaSecreta;
+    public $respSecreta;
     public $apelido;
     public $imgAvatar;
+    public $data;
+
+
 
     public function __construct($db) {
         $this->conn = $db;
@@ -24,7 +29,7 @@ function create(){
     $sql = "INSERT INTO
                 " . $this->nomeTabela . "
             SET
-                nome=:nome, dataNascimento=:dataNascimento, email=:email, telefone=:telefone, senha=:senha, confirmarSenha=:confirmarSenha, apelido=:apelido, imgAvatar=:imgAvatar";
+                nome=:nome, dataNascimento=:dataNascimento, email=:email, telefone=:telefone, senha=:senha, confirmarSenha=:confirmarSenha, categoriaSecreta=:categoriaSecreta, respSecreta=:respSecreta, apelido=:apelido, imgAvatar=:imgAvatar";
     
     $stmt = $this->conn->prepare($sql);
 
@@ -35,6 +40,8 @@ function create(){
     $this->telefone=htmlspecialchars(strip_tags($this->telefone));
     $this->senha=htmlspecialchars(strip_tags($this->senha));
     $this->confirmarSenha=htmlspecialchars(strip_tags($this->confirmarSenha));
+    $this->categoriaSecreta=htmlspecialchars(strip_tags($this->categoriaSecreta));
+    $this->respSecreta=htmlspecialchars(strip_tags($this->respSecreta));
     $this->apelido=htmlspecialchars(strip_tags($this->apelido));
     $this->imgAvatar=htmlspecialchars(strip_tags($this->imgAvatar));
 
@@ -45,6 +52,8 @@ function create(){
     $stmt->bindParam(":telefone", $this->telefone);
     $stmt->bindParam(":senha", $this->senha);
     $stmt->bindParam(":confirmarSenha", $this->confirmarSenha);
+    $stmt->bindParam(":categoriaSecreta", $this->categoriaSecreta);
+    $stmt->bindParam(":respSecreta", $this->respSecreta);
     $stmt->bindParam(":apelido", $this->apelido);
     $stmt->bindParam(":imgAvatar", $this->imgAvatar);
 
@@ -73,6 +82,11 @@ function update(){
         nome = '".$this->nome."',
         dataNascimento = '".$this->dataNascimento."',
         email = '".$this->email."',
+        telefone = '".$this->telefone."',
+        senha = '".$this->senha."',
+        confirmarSenha = '".$this->confirmarSenha."',
+        categoriaSecreta = '".$this->categoriaSecreta."',
+        respSecreta = '".$this->respSecreta."',
         apelido = '".$this->apelido."',
         imgAvatar = '".$this->imgAvatar."'
                

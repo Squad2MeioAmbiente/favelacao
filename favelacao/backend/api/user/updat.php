@@ -17,6 +17,11 @@
     $user->nome = $_POST['nome'];
     $user->dataNascimento = $_POST['dataNascimento']; 
     $user->email = $_POST['email'];
+    $user->telefone = $_POST['telefone'];
+    $user->senha = md5($_POST['senha']);
+    $user->confirmarSenha = md5($_POST['confirmarSenha']);    
+    $user->categoriaSecreta = $_POST['categoriaSecreta'];    
+    $user->respSecreta = $_POST['respSecreta'];    
     $user->apelido =  $_POST['apelido'];
     $user->imgAvatar =  $_POST['imgAvatar'];
 
@@ -32,11 +37,16 @@
             'nome' => $user->nome,
             'dataNascimento' => $user->dataNascimento,
             'email' => $user->email,
+            'telefone' => $user->telefone,
+            'senha' => $user->senha,
+            'confirmarSenha' => $user->confirmarSenha,
+            'categoriaSecreta' => $user->categoriaSecreta,
+            'respSecreta' => $user->respSecreta,
             'apelido' => $user->apelido,
             'imgAvatar' => $user->imgAvatar,
         ];
 
-        header("Location: ../../../frontend/perfil.php"); 
+        header("Location: ../../../frontend/pages/perfil.php"); 
         exit;
     }
 

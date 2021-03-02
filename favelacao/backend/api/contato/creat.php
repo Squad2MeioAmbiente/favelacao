@@ -1,60 +1,51 @@
 <?php
+    require_once('../config/dblogincad.php');
 
-header("Access-Control-Allow-Origin: *");
-header("Content-Type: application/json; charset=UTF-8");
-header("Access-Control-Allow-Methods: POST");
-header("Access-Control-Max-Age: 3600");
-header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
-  
-include_once '../config/dataBase.php';
-include_once '../models/contato.php';
-  
-$database = new Database();
-$db = $database->getConnection();
-  
-$contato = new Contato($db);
-  
 
-$data = json_decode(file_get_contents("php://input"));
+    if(isset($_POST['nome']) ){ 
 
-if(
-    !empty($data->nome) &&
-    !empty($data->email) &&
-    !empty($data->assunto) &&
-    !empty($data->mensagem)
-){
-  
-    
-    $contato->nome = $data->nome;
-    $contato->email = $data->email;
-    $contato->assunto = $data->assunto;
-    $contato->mensagem = $data->mensagem;
-   
-      
-
-    if($contato->creat()){
-  
-       
-        http_response_code(201);
-  
+        $nome =$_POST['nome'];
+        $email =$_POST['email']; 
+        $assunto =$_POST['assunto'];
+        $mensagem =$_POST['mensagem'];
+                
         
-        echo json_encode(array("message" => "Mensagem enviada com sucesso."));
-    }
-  
+        $sql = "insert into contato (nome, email, assunto, mensagem) values ('$nome', '$email', '$assunto', '$mensagem')"; 
+        $result = mysqli_query($conn, $sql); 
+        if($result){ 
+            echo "<script>
+                alert ('Mensagem enviada com sucesso!')
+                window.location.href='../../../frontend/pages/contato.php'
+            </script>";
+        }
+        
+        else{ 
+            echo "<script>
+                alert ('Não foi possível enviar sua mensagem!')
+                window.location.href=''
+            </script>";
+        } 
+        
+    } 
     
     else{
-  
-        http_response_code(503);
-  
-        echo json_encode(array("message" => "Não foi possível enviar sua Mensagem."));
-    }
-}
-  
-else{
-  
-    http_response_code(400);
-  
+        echo "<script>
+            window.location.href='../../../frontend/pages/contato.php'
+        </script>";
+    
+    } 
+    
+?>  
 
-    echo json_encode(array("message" => "Não foi possível enviar sua mensagem. Os dados estão incorretos."));
-}
-?>
+
+
+
+
+
+
+
+
+
+
+
+
