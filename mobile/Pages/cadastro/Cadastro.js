@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import { View, TextInput, ScrollView, Text, ImageBackground, TouchableOpacity, Image, Button,  } from 'react-native';
-import { CheckBox, Icon } from 'react-native-elements';
+import { View, TextInput, ScrollView, Text, ImageBackground, TouchableOpacity, Image } from 'react-native';
+import { CheckBox } from 'react-native-elements';
+import {Picker} from '@react-native-picker/picker'
 
 
 import styles from './style';
@@ -16,6 +17,12 @@ function Cadastro({navigation}) {
   const [isSelected, setSelected] = useState(false)
   const [isSelected2, setSelected2] = useState(false)
   const [isSelected3, setSelected3] = useState(false)
+
+  const [tipoDeSenha] = useState(
+    ['Desenho Preferido','Super herói preferido', 'Nome de animal de estimação','Nome do seu melhor amigo']
+    );
+    const [categoriaSenha, setCategoriaSenha] = useState([])
+ 
    
   return (
     <ScrollView>
@@ -54,6 +61,33 @@ function Cadastro({navigation}) {
           <TextInput style={styles.input}  secureTextEntry={true} />
         </View>
         <View>
+          <Text  style={styles.text}>Escolha a categoria da palavra secreta:</Text>
+          <Picker 
+           style={styles.inputEscolha}
+            selectedValue={categoriaSenha}                       
+            onValueChange={(itemValue) => 
+              setCategoriaSenha(itemValue)}
+          >
+            {
+              tipoDeSenha.map(cr => {
+                return <Picker.Item label={cr} value={cr} />
+              })
+            }
+                 
+          </Picker>
+    </View>
+        <View>
+          <Text style={styles.text}>Resposta da palavra secreta:</Text>
+          <TextInput 
+          style={styles.input} 
+          placeholder="Primeira letra maiúscula e o restante minúscula"
+          />
+        </View>
+        <View>
+          <Text style={styles.text}>Apelido:</Text>
+          <TextInput style={styles.input} label={"Primeira Letra maiúscula e o restante minúscula"}/>
+        </View>
+        <View>
           <Text style={styles.text}>Apelido:</Text>
           <TextInput style={styles.input} />
         </View>
@@ -88,8 +122,9 @@ function Cadastro({navigation}) {
         </View>
 
         <TouchableOpacity style={styles.btn} onPress={()=>{navigation.navigate('Game')}}>
-            <Text style={styles.cadastrar}>Cadastrar</Text>          
+            <Text style={styles.salvar}>Salvar</Text>          
         </TouchableOpacity>
+        
         
 
 

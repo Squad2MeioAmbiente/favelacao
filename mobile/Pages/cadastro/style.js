@@ -7,13 +7,14 @@ const styles = StyleSheet.create({
    width: "100%",
    height: "100%",   
  },
+
  container: {
    margin: 30,
    alignItems:"center",
-   width: 300,
-   height: 800,
+   width: "82%",
+   height: "95%",
    backgroundColor: "#fff",
-   borderRadius: 20   
+   borderRadius: 20,    
  },
 
  titulo: {
@@ -35,11 +36,21 @@ const styles = StyleSheet.create({
 
  },
  input: {
-   backgroundColor: "#f8f9fa",
-   width: 200,
-   margin: 2,
-   borderWidth: 0.3,
+  
+  backgroundColor: "#f8f9fa",
+  width : 200,
+  borderStyle : "solid",
+  borderColor : "black",
+  borderWidth : 1,
+  borderRadius : 5
   },
+  
+  inputEscolha: {
+    backgroundColor: "#f8f9fa",     
+     marginLeft: 40,   
+     borderWidth: 0.3,
+     
+    }, 
  btn: {
   backgroundColor: "#ffb703",
   width: 150,
@@ -49,33 +60,37 @@ const styles = StyleSheet.create({
   borderRadius: 30,
   
  },
- cadastrar: {
+ salvar: {
    color: "#fff",
    fontWeight: "bold",
    fontSize: 18,
-   textAlign: 'center'
+   textAlign: 'center',
+   
  },
  box: {
   flexDirection: 'row',
   justifyContent: 'space-around',
   
+  padding: 0, 
+  
  },
 
  she: {
-   width: 80,
-   height: 80,
-   borderRadius: 60,
+   width: 40,
+   height: 40,
+   borderRadius: 20,
+   marginLeft: 5,
    
  },
  boy:{
-  width: 80,
-  height: 80,
-  borderRadius: 60
+  width: 40,
+  height: 40,
+  borderRadius: 20,
  },
  boyblond:{
-  width:80,
-  height: 80,
-  borderRadius: 60
+  width: 40,
+  height: 40,
+  borderRadius: 20,
  }
 
 });

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View, ImageBackground, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import backfavela from '../assets/backfavela.jpg'
 import helio from '../assets/helio.png'
@@ -24,7 +25,7 @@ export default function Game({navigation}){
             </TouchableOpacity>
 
             <TouchableOpacity style={style.buttonHome} onPress={()=>{navigation.navigate('Home')}} >
-                <Text style= {{color : 'white'}} >Home</Text>
+            <Icon name="home" size={25} color={"#023047"} />
             </TouchableOpacity>
 
             </ImageBackground>
@@ -65,7 +66,6 @@ const style = StyleSheet.create({
         borderRadius : 10,        
     },
     buttonHome :{
-        backgroundColor : "#219EBC",
         width : "20%",
         height : "5%",
         position : "absolute",

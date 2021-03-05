@@ -18,11 +18,13 @@ export default function Login ({navigation}){
 
                 </TextInput>
 
-                <TouchableOpacity style={style.button}>
+                <TouchableOpacity style={style.button} onPress={()=>{navigation.navigate('Game')}}>
                     <Text style={style.buttonText}>Próximo</Text>
                 </TouchableOpacity>
 
-                <Text style={style.senha}>Esqueceu a senha ? </Text>
+                <TouchableOpacity onPress={()=>{navigation.navigate('RecuperarSenha')}}>
+                    <Text style={style.senha}>Esqueceu a senha ? </Text>
+                </TouchableOpacity>
 
                <TouchableOpacity onPress={()=>{navigation.navigate('Cadastro')}}>
                     <Text style={style.senha}>Ainda não tem uma conta ? Clique aqui! </Text>
@@ -32,6 +34,7 @@ export default function Login ({navigation}){
         </View>
     )
 }
+
 const style = StyleSheet.create({
     fundo: {
         flex : 1,
@@ -39,6 +42,7 @@ const style = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         },
+        
     div : {
         borderRadius : 25,
         backgroundColor : "white",
@@ -59,7 +63,7 @@ const style = StyleSheet.create({
         borderStyle : "solid",
         borderColor : "black",
         borderWidth : 1,
-        borderRadius : 10
+        borderRadius : 5
     },
     corTexto :{
         color : "#219EBC",
@@ -72,11 +76,11 @@ const style = StyleSheet.create({
     },
     button : {
         margin : 10,
-        alignItems: 'center',
-        borderRadius : 10,
+        alignItems: 'center',        
         backgroundColor : "#FFB703",
         width : "80%",
-        height : 25
+        height : 25,  
+        borderRadius : 5
     },
     buttonText:{
         color : "white",

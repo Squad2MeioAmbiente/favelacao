@@ -1,31 +1,21 @@
 import React, {useState} from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
-import { NavigationContainer } from '@react-navigation/native';
-
-import Game from './Pages/Game';
-import Login from './Pages/login';
-import Home from './Pages/home/Home';
-import Cadastro from './Pages/cadastro/Cadastro';
+import { StatusBar } from 'react-native';
+import Routes from './routes'
 
 
-const Stack = createStackNavigator();
 
-function MyStack() {
+
+function App() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Game" component={Game} />
-      <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Cadastro" component={Cadastro} />
-    </Stack.Navigator>
+    <>
+     <StatusBar />
+     <Routes />
+    </>
+
+    
+    
   );
 }
 
 
-export default function App() {
-  return (
-    <NavigationContainer>
-      <MyStack />
-    </NavigationContainer>
-  );  
-}
+export default App;

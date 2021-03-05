@@ -4,9 +4,9 @@ import styles from './style';
 import Fundo from '../../assets/homepage.png';
 
 
-function Home({navigation}){
 
-   
+
+function Home({navigation}){ 
    
   return (
     <View style={styles.caixa}>     
@@ -16,8 +16,9 @@ function Home({navigation}){
         <View> 
 
           <TouchableOpacity style={styles.btn} onPress={()=>{navigation.navigate('Login')}}>
-            <Text style={styles.texto}>JOGAR</Text>
+              <Text style={styles.texto}>JOGAR</Text>
           </TouchableOpacity>
+                  
           
 
         </View>
