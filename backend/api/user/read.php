@@ -30,8 +30,11 @@ if($numRows>0){
             "telefone"=> $telefone,
             "senha"=> $senha,
             "confirmarSenha"=> $confirmarSenha,
+            "categoriaSecreta"=> $categoriaSecreta,
+            "respSecreta"=> $respSecreta,
             "apelido"=> $apelido,
-            "imgAvatar"=> $imgAvatar
+            "imgAvatar"=> $imgAvatar,
+            "data"=>$data
         );
 
         array_push($users_arr, $user_item);

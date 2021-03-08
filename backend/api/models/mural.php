@@ -16,29 +16,25 @@ class Mural {
 
 function creat(){
     
-    $sql = "INSERT INTO
-                " . $this->nomeTabela . "
-            SET
-                nome=:nome, imagem=:imagem";
+     $sql = "INSERT INTO `favelacao`.`mural` (`nome`, `imagem`) VALUES ( '".$this->nome."' , '".$this->imagem."' )";
     
     $stmt = $this->conn->prepare($sql);
-
     
+        
     $this->nome=htmlspecialchars(strip_tags($this->nome));
     $this->imagem=htmlspecialchars(strip_tags($this->imagem));
-   
-
+       
+    
     $stmt->bindParam(":nome", $this->nome);
     $stmt->bindParam(":imagem", $this->imagem);
-
+    
     if($stmt->execute()){
         return true;
     }
-
-    return false;
     
+    return false;
+        
 }
-
 function read(){
     $sql= "SELECT * from "  . $this->nomeTabela;
 

@@ -18,6 +18,9 @@ $user->id =$_SESSION['user']['id'];
 
   
 if($user->delete()){
+
+    $user->deleteSaveMail(); //Deleta também o registro de save do usuario logado
+    $user->deleteMedalMail(); //Deleta também o registro de medalhas do usuario logado
   
     http_response_code(200);
     session_destroy();

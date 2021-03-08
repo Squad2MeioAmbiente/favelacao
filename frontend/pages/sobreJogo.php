@@ -56,7 +56,7 @@ $desenhos = json_decode(curl_exec($ch));
     
       <?php  }else{?>
         <div class="button">
-  <a href=../jogo/screen1/s1.html><button class="buttonJogar">JOGAR</button></a>
+  <a href="./selectMission.php"><button class="buttonJogar">JOGAR</button></a>
   </div>
     <?php }?>
 
@@ -74,7 +74,7 @@ $desenhos = json_decode(curl_exec($ch));
       <div class="col-sm-3">
         
       <div class="card">
-        <img class="card-img-top" src="../img/<?=$desenho->imagem ?>" alt="Desenho">
+        <img class="card-img-top imagemMissao" src="../img/mural/<?=$desenho->imagem ?>" alt="Desenho">
         <div class="card-body">
           <h5 class="card-title"><?=$desenho->nome ?></h5>
         </div>

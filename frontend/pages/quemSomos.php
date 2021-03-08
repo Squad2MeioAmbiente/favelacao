@@ -28,10 +28,10 @@
   
       <h1 class="txtContato"><img class="imgContato" src="../img/iconMegafone.png" alt="">Quem Somos</h1>
   
-        <p class="txtcriado">Criado em 2020,com intuito de ser um projeto de conclusão de curso da Recode Pro,<br />
-                O Favelação tem como base o ODS (Objetivo de Desenvolvimento Sustentável) 12,<br/>
-                esse objetivo assegurar padroes de produção e de consumo sustentaveis.
-        </p>
+      <p class="txtcriado">Criado em 2020, com intuito de ser um projeto de conclusão de curso da Recode Pro,<br />
+        o FavelAção tem como base o ODS (Objetivo de Desenvolvimento Sustentável) 12,<br />
+          esse objetivo busca assegurar padrões de produção e de consumo sustentáveis.<br />
+      </p>
        
     
 <div class="containerMissao"> 

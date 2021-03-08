@@ -28,6 +28,7 @@ if($numRows>0){
             "idenredo"=> $idenredo,
             "frase"=>$frase,
             "personagem"=>$personagem,
+            "cenario"=>$cenario
 
         );
 

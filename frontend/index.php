@@ -34,7 +34,7 @@
       <a href="./pages/login.php"><button class="buttonJogar">JOGAR</button></a>
 
       <?php  }else{?>
-      <a href="./jogo/screen1/s1.html"><button class="buttonJogar">JOGAR</button></a>
+      <a href="./pages/selectMission.php"><button class="buttonJogar">JOGAR</button></a>
     <?php }?>
     </div> 
   </div>

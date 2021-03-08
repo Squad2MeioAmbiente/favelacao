@@ -43,6 +43,13 @@ html, body {
   border-radius: 15px 15px !important;
 }
 
+.thumbnail {
+  margin-top: 25px;
+}
+.thumbnail img{
+  margin-top: -25px;
+}
+
 
 h5 {
   font-weight: bold;

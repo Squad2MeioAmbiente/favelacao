@@ -35,6 +35,7 @@ if($numRows>0){
 
     http_response_code(200);
     echo json_encode($contato_arr);
+    
 } else { 
     http_response_code(404);
     echo json_encode(

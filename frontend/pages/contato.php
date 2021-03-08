@@ -12,7 +12,7 @@
     <link rel="sortcut icon" href="../img/logo_Megafone_Grande.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/contato.css">
     
-    <title>Pagina de Contato</title>
+    <title>Página de Contato</title>
   </head>
 
 
@@ -34,7 +34,7 @@
    
        
 
-        <form action="./conectContato.php" name="" id="idformContato" method="post"  class="needs-validation" >
+        <form action="../../backend/api/contato/creat.php" name="" id="idformContato" method="post"  class="needs-validation" >
         
           <div class="form-group col-sm">
                 <label >Nome*</label>
@@ -48,6 +48,7 @@
                 <input type="text" name="assunto" class="form-control" id="assunto" placeholder="Digite o assunto" required>
                 <label for="mensagem">Mensagem*</label>
                 <textarea name="mensagem" class="form-control" rows="4" id="mensagem" required></textarea>
+                <p class="obrigatorio"> *Preenchimento obrigatório </p>
                 <button type="submit" class="btn btn-block boton">Enviar</button>
 
               </div>

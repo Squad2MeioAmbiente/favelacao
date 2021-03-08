@@ -19,7 +19,7 @@
 
     <div class="col-sm-2">
         <h3>SUPORTE </h3>
-        <a href="./pages/Erro.html" title="Ajuda"><h3>Perguntas Frequentes</h3></a>
+        <a href="../pages/ajuda.php"  title="Ajuda"><h3>Perguntas Frequentes</h3></a>
         <a href="./pages/contato.php" title="Contato"><h3>Fale Conosco</h3></a>
         
     </div>
