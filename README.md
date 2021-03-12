@@ -37,11 +37,13 @@ Com uma história que se passa dentro desta comunidade e personagens comuns, as 
 As missões são atividades práticas, típico mão na massa, fazendo a criança se divertir interagindo com o ambiente a sua volta e aprendendo a cuidar do meio ambiente na comunidade em que vivem.</p>
 <hr>
 
-<h2>🔎Pesquisas sobre a comunidade heliópolis:</h2>
+<h2>🔎Pesquisas sobre a comunidade Heliópolis:</h2>
 <img width=50px src="https://pbs.twimg.com/profile_images/378800000290688369/61249d95c89c02b9150d1762f2aacde3_400x400.jpeg">
-<p>A UNAS - União de Núcleos, Associações dos Moradores de Heliópolis e Região.</p>
-<p>A nossa conversa com a coordenadora do Unas, Bárbara Bethania, vimos qual era a real necessidade dentro da comunidade. Que é o trabalho com as crianças sobre o meio ambiente, pois entende-se que elas tem mais fácil entendimento em conscientização, aceitando a informação de maneira lúdica, levando conhecimento para dentro de casa. E com isso montamos o projeto FavelAção.</p>
-  
+<p>A <a href="https://www.unas.org.br/">UNAS </a>- União de Núcleos, Associações dos Moradores de Heliópolis e Região.</p>
+<p> Coordenadora do UNAS - Bárbara Bethania</p>
+
+ <hr>
+ 
 <h3> Tecnologias 🚀 </h3>
      <a href="https://www.w3schools.com/html/">
         <img src="https://icongr.am/devicon/html5-original-wordmark.svg?size=30&color=currentColor">
@@ -75,15 +77,12 @@ As missões são atividades práticas, típico mão na massa, fazendo a criança
 	<a href="https://github.com/">
          <img src="https://icongr.am/devicon/github-original-wordmark.svg?size=30&color=currentColor">
   	</a>
+	<a href="#">
+	 <img width=30px src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png">
+	</a>
+	 
+	
+<hr>
 
-# Guia de Instalação
-- Clone o repositório ;
-- Copie a Pasta dentro do servidor XAMPP, WAMP ou o de sua preferência;
-- Importe o arquivo SQL "favelacao.sql" no seu SGB (PHPMyAdmin, Workbench, entre outros).
 
-# Como obter o primeiro acesso
-A primeira tela é a Home, no menu consta um link para cadastro, basta se cadastrar efetuar o login para navegação no jogo.
-
-# Segue abaixo link do site:
-http://favelacao.epizy.com/
 
