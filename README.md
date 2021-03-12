@@ -1,9 +1,9 @@
 <p align="center">
     <a href="http://projetofavelacao.epizy.com/">
-       <img src="https://github.com/Squad2MeioAmbiente/Projeto_FavelAcao/blob/ProjetoFinal/img/logo_favela%C3%A7%C3%A3o2.png"> 
-    </a>
+       <img src="https://github.com/favelacao/favelacao/blob/main/favelacao/frontend/img/logo_favelacao.png">	    
+    </a>	
   </p>
-  
+  <p align="center"><b>Tranformando crianças em grandes hérois para o planeta.</b></p>
  <br />
  <br />
 
@@ -26,7 +26,7 @@
 </p>
 <hr>
 
-<h2 align="center">Mas o que é FavelAção?</h2>    
+<h2 align="center">Mas o que é FavelAção? <img width=30px src="https://github.com/favelacao/favelacao/blob/main/favelacao/frontend/img/logo_Megafone_Grande.png"></h2>    
  <a href="http://favelacao.epizy.com/favelacao/">
 	<p align="center">Aplicação Web</p>
 </a>
@@ -77,6 +77,7 @@ As missões são atividades práticas, típico mão na massa, fazendo a criança
    <hr>
   
   <h3> 🛠️ Ferramentas: </h3>  	
+ <p>Usamos as seguintes ferramentas na execução do projeto.</p>
  	<ul>
 	  <li>
 		  <a href="https://git-scm.com/">Git</a> - Aprendemos a commitar os projetos.
@@ -99,9 +100,14 @@ As missões são atividades práticas, típico mão na massa, fazendo a criança
 	<li>
 		<a href="https://discord.com/channels/751849339982315542/751849340414459945"> Discord</a> - Onde realizamos todas as nossas reuniões.
 	</li>
-	</ul>
-	 
+	</ul> 
 	
 <hr>
+
+<p>Aperte o Play e assista o Pitch  
+   <a href="https://www.youtube.com/watch?v=6LmjnU9_kuY">
+	<img src="https://icongr.am/entypo/controller-play.svg?size=49&color=f31212">
+   </a>
+</p>
 
 
