@@ -71,8 +71,8 @@ As missões são atividades práticas, típico mão na massa, fazendo a criança
  <hr>
  
  <h3> Tecnologias Mobile: 🚀 </h3>
-     <a href="https://www.w3schools.com/html/">
-        <img src="">
+     <a href="https://reactnative.dev/">
+        React Native
      </a>
    <hr>
   
