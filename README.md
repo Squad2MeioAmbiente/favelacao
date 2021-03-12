@@ -44,7 +44,7 @@ As missões são atividades práticas, típico mão na massa, fazendo a criança
 
  <hr>
  
-<h3> Tecnologias 🚀 </h3>
+<h3> Tecnologias Web: 🚀 </h3>
      <a href="https://www.w3schools.com/html/">
         <img src="https://icongr.am/devicon/html5-original-wordmark.svg?size=30&color=currentColor">
      </a>
@@ -69,20 +69,32 @@ As missões são atividades práticas, típico mão na massa, fazendo a criança
 	<img src="https://icongr.am/devicon/react-original.svg?size=30&color=currentColor">
      </a>
  <hr>
+ 
+ <h3> Tecnologias Mobile: 🚀 </h3>
+     <a href="https://www.w3schools.com/html/">
+        <img src="">
+     </a>
+   <hr>
   
   <h3> Ferramentas: </h3>
-  	<a href="https://git-scm.com/">
+  	<p>
 		 <img src="https://icongr.am/devicon/git-original.svg?size=30&color=currentColor">
-	  </a>
-	<a href="https://github.com/">
+	Git - Aprendemos a commitar os nossos projetos em branchs
+	  </p> 
+	<p>
          <img src="https://icongr.am/devicon/github-original-wordmark.svg?size=30&color=currentColor">
-  	</a>
+	GitHub - Fizemos uma organização com o nome do projeto
+  	</p>
 	<a href="#">
 	 <img width=30px src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png">
 	</a>
+	<p>
+	<img width=30px src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png">
+	AdobeXD - Desenvolvemos os protótipos: <a href="https://xd.adobe.com/view/8f20994e-08d7-46a2-8a50-69224fd21f14-da73/">Painel administrativo</a>, <a href="https://xd.adobe.com/view/ebfd8642-5911-41b9-94f2-d9f0f8c7639e-beae/">Aplicação Web</a>, <a href="https://xd.adobe.com/view/6f7926db-a860-4165-b9eb-d5bc6db744a4-3a2a/">Aplicação Mobile<a>
+	
+	</p>
 	 
 	
 <hr>
-
 
 
