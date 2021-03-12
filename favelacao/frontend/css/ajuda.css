@@ -1,0 +1,116 @@
+body {
+  
+    font-size: 80%;
+  }
+  
+  html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium; 
+    height: 100%;
+  }
+ 
+  .txtRecuperar {
+    padding: 12px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .iconeAjuda {
+    width: 45px;
+    padding-right: 20px;
+  }
+  .tituloPerguntasF{
+    padding: 12px;
+    color: #219EBC;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .iconeAjuda2 {
+    width: 50px;
+    padding-right: 20px;
+  }
+
+  .perguntasF{
+    color: #219EBC;
+    margin-top: 24px;
+
+  }
+
+  .perguntasF h5{
+    font-size: 18px;
+    font-weight: bold;
+  }
+ 
+  .prob {
+    color: #219EBC;
+    font-weight: bold;
+    text-align: center;
+  }
+  .respos {
+    color: #219EBC;
+    text-align: center;
+  }
+
+.h5 {
+    margin-top: 10px;
+    color: #219EBC;
+    font-size: 16px;
+  }
+   
+  .boton {
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    background: #fb8500;
+    border-radius: 20px;
+    transition: 0.2s;
+    /* margin-right: 20px; */
+    margin-top:20px;
+  }
+  
+  .boton:hover {
+      cursor: pointer;
+      background: #ffb703;
+      color:#023047;
+      transition: 0.2;
+  }
+  
+  .aLogin {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #219EBC;
+    transition: 0.2s;
+    text-align: center;
+  }
+  
+  .corbug  {
+    background: #219EBC;
+    width: 100%;
+  }
+   
+   .form-signin {
+    /* width: 100%; */
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+  } 
+ 
+  
+  .card {
+    background-color:#fff ; 
+    width:100%;
+    height: 400px;
+
+  }
+ .container-fluid{
+   background-color: #219EBC;
+   
+ }
+ 
+ 
