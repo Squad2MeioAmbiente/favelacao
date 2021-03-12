@@ -37,7 +37,7 @@ As missões são atividades práticas, típico mão na massa, fazendo a criança
 <h2>🔎Pesquisas sobre a comunidade heliópolis:</h2>
 <img width=50px src="https://pbs.twimg.com/profile_images/378800000290688369/61249d95c89c02b9150d1762f2aacde3_400x400.jpeg">
 <p>A UNAS - União de Núcleos, Associações dos Moradores de Heliópolis e Região.</p>
-<p><A nossa conversa com a coordenadora do Unas, Bárbara Bethania, vimos qual era a real necessidade dentro da comunidade. Que é o trabalho com as crianças sobre o meio ambiente, pois entende-se que elas tem mais fácil entendimento em conscientização, aceitando a informação de maneira lúdica, levando conhecimento para dentro de casa. E com isso montamos o projeto FavelAção./p>
+<p>A nossa conversa com a coordenadora do Unas, Bárbara Bethania, vimos qual era a real necessidade dentro da comunidade. Que é o trabalho com as crianças sobre o meio ambiente, pois entende-se que elas tem mais fácil entendimento em conscientização, aceitando a informação de maneira lúdica, levando conhecimento para dentro de casa. E com isso montamos o projeto FavelAção.</p>
   
 <h3> Tecnologias 🚀 </h3>
      <a href="https://www.w3schools.com/html/">
@@ -66,7 +66,7 @@ As missões são atividades práticas, típico mão na massa, fazendo a criança
  <hr>
   
   <h3> Ferramentas: </h3>
-  <a href="https://git-scm.com/">
+  	<a href="https://git-scm.com/">
 		 <img src="https://icongr.am/devicon/git-original.svg?size=30&color=currentColor">
 	  </a>
 	<a href="https://github.com/">
