@@ -76,23 +76,30 @@ As missões são atividades práticas, típico mão na massa, fazendo a criança
      </a>
    <hr>
   
-  <h3> Ferramentas: </h3>
-  	<p>
-		 <img src="https://icongr.am/devicon/git-original.svg?size=30&color=currentColor">
-	Git - Aprendemos a commitar os nossos projetos em branchs
-	  </p> 
-	<p>
-         <img src="https://icongr.am/devicon/github-original-wordmark.svg?size=30&color=currentColor">
-	GitHub - Fizemos uma organização com o nome do projeto
-  	</p>
-	<a href="#">
-	 <img width=30px src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png">
-	</a>
-	<p>
-	<img width=30px src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png">
-	AdobeXD - Desenvolvemos os protótipos: <a href="https://xd.adobe.com/view/8f20994e-08d7-46a2-8a50-69224fd21f14-da73/">Painel administrativo</a>, <a href="https://xd.adobe.com/view/ebfd8642-5911-41b9-94f2-d9f0f8c7639e-beae/">Aplicação Web</a>, <a href="https://xd.adobe.com/view/6f7926db-a860-4165-b9eb-d5bc6db744a4-3a2a/">Aplicação Mobile<a>
-	
-	</p>
+  <h3> 🛠️ Ferramentas: </h3>  	
+ 	<ul>
+	  <li>
+		  <a href="https://git-scm.com/">Git</a> - Aprendemos a commitar os projetos.
+	</li>
+	  <li>
+	  	  <a href="https://github.com/">GitHub</a> - Criamos a Organização FavelAção.
+	  </li>
+	  <li>
+	  	  <a href="https://www.adobe.com/products/xd.html">AdobeXD</a> - Ideação dos protótipos: <a href="https://xd.adobe.com/view/8f20994e-08d7-46a2-8a50-69224fd21f14-da73/">Painel Administrativo</a>. <a href="https://xd.adobe.com/view/ebfd8642-5911-41b9-94f2-d9f0f8c7639e-beae/">Aplicação Web</a>, <a href="https://xd.adobe.com/view/6f7926db-a860-4165-b9eb-d5bc6db744a4-3a2a/">Aplicação Mobile</a>.
+	  </li>
+          <li>
+	  	  <a href="https://coolors.co/">Coolors</a> - Ferramenta onde definimos as cores do projeto.
+	  </li>
+	  <li>
+	  	  <a href="https://trello.com/b/dibWEjsH/squad-2-meio-ambiente">Trello</a> - Utilizamos o trello para a organização do grupo.
+	  </li>
+	  <li>
+		  <a href="https://infinityfree.net/">InfinityFree</a> - Hospedagem do site, tanto o front quanto o back end da aplicação
+	  </li>
+	<li>
+		<a href="https://discord.com/channels/751849339982315542/751849340414459945"> Discord</a> - Onde realizamos todas as nossas reuniões.
+	</li>
+	</ul>
 	 
 	
 <hr>
