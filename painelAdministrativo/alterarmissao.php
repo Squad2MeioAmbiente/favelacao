@@ -7,7 +7,7 @@
 
   if (isset($_REQUEST['delete'])) {
     echo "<script>
-    alert('Missão deleta!'); 
+    alert('Missão deletada!'); 
     </script>";
   }
 // window.location.href='../../alterarmissao.php'
@@ -80,15 +80,14 @@
             <?php
               include_once './backend/config/conexaobd.php';
     
-                // if (!isset($_SESSION)) session_start();
+            
                 
                 $sql = "SELECT * FROM missao"; 
                 $result = mysqli_query($conn, $sql);
-                // $idmissoes=[];
+                
                 if ($result->num_rows>0){
                   while($row= mysqli_fetch_assoc($result)){
-                    // $idmissoes[]=$row;
-                    // json_encode($idmissoes);
+                    
                     
             ?>
 

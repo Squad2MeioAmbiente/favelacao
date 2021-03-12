@@ -44,7 +44,7 @@
 
           </div>
 
-          <form action="../../Painel-ADM-FavelAcao/backend/missao/create.php?idmissao" method="POST">
+          <form action="../painelAdministrativo/backend/missao/create.php?idmissao" method="POST">
             <div class="card-group">
               <div class="card">
                 <div class="card-body">

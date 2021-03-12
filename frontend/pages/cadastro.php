@@ -64,7 +64,7 @@
                 </select><br/>
                 
                 <label>Resposta da palavra secreta</label>
-                <p class="lembre">Primeira letra maiúscula e o restante minúscula</p>
+            
                 <input type="text" name="respSecreta" id="respSecreta" class="form-control" pattern="^[^-\s][a-zA-ZÀ-ú ]*" placeholder="Digite sua palavra secreta" required/>
                 
                 <label >Apelido</label>

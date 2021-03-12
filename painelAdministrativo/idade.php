@@ -43,7 +43,7 @@
 
 
 <?php
-$url = "http://localhost/Painel-ADM-FavelAcao/backend/usuarios/read.php";
+$url = "http://localhost/favelacao/painelAdministrativo/backend/usuarios/read.php";
  
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -113,7 +113,7 @@ $faixa=0;
               var myChart= new Chart(ctx,{
                   type:"pie",
                   data:{
-                      labels:['< = 6 anos', '7 anos', '8 anos', '9 anos', 'Outros'],
+                      labels:['6 anos', '7 anos', '8 anos', '9 anos', 'Outros'],
                       datasets:[{
                           label:'Num dados',
                           data:[ <?php { echo "$idade6"; } ?>, <?php { echo "$idade7"; } ?>, <?php { echo "$idade8"; } ?>,<?php { echo "$idade9"; } ?>, <?php { echo "$idadeOutros"; } ?>],

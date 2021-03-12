@@ -17,7 +17,7 @@
 
             if(($respSecreta==$row['respSecreta']) && (strlen($_POST['senha']))===8){
             
-                $sql2 = "UPDATE `favelacao`.`usuarios` SET `senha` = '$senha', `confirmarSenha` = '$confirmarSenha' WHERE (`email` = '$email')";
+                $sql2 = "UPDATE usuarios SET senha = '$senha', confirmarSenha = '$confirmarSenha' WHERE (email = '$email')";
                 $result2 = mysqli_query($conn, $sql2); 
             
                 if($result2 && $senha==$confirmarSenha){

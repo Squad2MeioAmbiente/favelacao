@@ -69,7 +69,7 @@
             
                 <label>Senha</label>
                 <input type="password" name="senha" value="<?php echo $_SESSION['user']['senha']; ?>" class="form-control" minlength="8" maxlength="8" required/>
-                
+
                 <label>Confirme sua Senha</label>
                 <input type="password" name="confirmarSenha" value="<?php echo $_SESSION['user']['confirmarSenha']; ?>" class="form-control" maxlength="8" required/>
             
@@ -83,7 +83,7 @@
                   </select><br/>
                 
                 <label>Resposta da palavra secreta</label>
-                <p class="lembre">Primeira letra maiúscula e o restante minúscula</p>
+                
                 <input type="text" name="respSecreta" id="respSecreta" value="<?php echo $_SESSION['user']['respSecreta']; ?>" class="form-control" pattern="^[^-\s][a-zA-ZÀ-ú ]*" required/>
             
                 <label>Apelido:</label>
@@ -129,8 +129,6 @@
               </div>
                         
             <button name="btn_cadastra" type="submit" class="btn btn-block boton mt-3"> Salvar </button>
-                        
-
           </form>
         </div>
         <div>

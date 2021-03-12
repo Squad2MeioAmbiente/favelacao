@@ -54,7 +54,7 @@
     <div class="card-body sombra">       
     <form action="../../backend/api/user/recupera.php" method="POST">
             <p class="respos">Digite a resposta da palavra secreta!</p>
-            <p class="lembre">Lembre-se: Primeira letra maiúscula e o restante minúscula</p>
+        
 
           <?php
               if (!isset($_SESSION)) session_start();
@@ -82,7 +82,7 @@
             <input type="text" name="respSecreta" class="form-control" id="" placeholder="Digite sua palavra secreta" required/>
 
             <label >Nova Senha:</label>
-            <input type="password" name="senha" class="form-control" id="senha" minlength="8" placeholder="Digita sua nova senha" required/>
+            <input type="password" name="senha" class="form-control" id="senha" minlength="8" placeholder="Digite sua nova senha" required/>
             <label >Confirmar Senha:</label>
             <input type="password" name="confirmarSenha" class="form-control" id="confirmarSenha" minlength="8" placeholder="Confirme sua nova senha" required/>
            <!-- <button class="btn btn-success">Enviar</button> -->

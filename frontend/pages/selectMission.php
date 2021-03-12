@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../jogo/selecionarMissao/selectMission.css">
     <link rel="sortcut icon" href="../jogo/missoes/img/outros/logo_Megafone_Grande.png" type="image/x-icon" />
     <script src="../jogo/selecionarMissao/selectMission.js"></script>
-    <title>Suas Missões</title>
+    <title>Jogar</title>
   </head>
   <body >
   <?php 
@@ -18,12 +18,10 @@
     ?>
   <div class="corbug">
 
-    <br><br><br><br><br>
-
   </div>  
-    <div class="container-fluid text-center pb-2">
-    <!-- <h1><img class="iconPerfil" src="../img/iconPerfil.png" alt="atendimento"> Suas missões </h1><br/> -->
-       <h1 class="titulo">Suas missões </h1>
+    <div class="container-fluid text-center titulo">
+    <h1 class="tituloJogar"><img class="iconMegafone" src="../jogo/missoes/img/icones/iconeMegafoneAmarelo.png" alt="">Jogar</h1><br/>
+      
     </div>
 
 
@@ -35,7 +33,7 @@
 
       <?php if (!isset($_SESSION)) session_start();?>
 
-      <?php $titulo = ["0", "Primeira Missão", "Segunda Missão", "Terceira Missão", "4", "5", "6", "7", "8", "9", "10"]  ?>
+      <?php $titulo = ["0", "Missão: Entrar para o FavelAção", "Missão: Doar brinquedo", "Missão: Desenhar o meio ambiente", "Missão: Descartar óleo de cozinha", "Missão: Recolher recicláveis", "Missão: Usar sacolas retornáveis", "Missão: Plantar broto de feijão", "Missão: Retirar água parada", "Missão: Cores de cada lixeira de recicláveis", "Missão: Concluir o FaveLação"]  ?>
 
 
   <?php for($i = 1; $i <= 10 ; $i++){ ?> 
@@ -53,7 +51,7 @@
     else{ ?>
 
         <div class="card-text">
-          <button class="bot btn" ><p> <img style="width:18px" class="imgContato mr-2" src="../img/iconeCadeado.png" alt="atendimento">Missão Bloqueada!!</p></button>
+          <button class="bot btn" ><p> <img style="width:18px" class="imgContato mr-2" src="../img/iconeCadeado.png" alt="atendimento">Missão Bloqueada</p></button>
         </div>
 						
 			<?php }?>

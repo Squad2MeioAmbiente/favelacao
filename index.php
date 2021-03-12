@@ -85,19 +85,19 @@
 
     <div class="missaoBox">
       <div class="card " >
-        <img src="./frontend/img/img1.jpg" class="card-img-top" alt="...">
+        <img src="./frontend/img/img1.png" class="card-img-top" alt="Cena 1">
         <!-- <div class="card-body">
           <p class="card-text">Cena do Jogo 1</p>
         </div> -->
       </div>
       <div class="card " >
-        <img src="./frontend/img/img2.jpg" class="card-img-top" alt="...">
+        <img src="./frontend/img/img2.png" class="card-img-top" alt="Cena 2">
         <!-- <div class="card-body">
           <p class="card-text">Cena do Jogo 2</p>
         </div> -->
       </div>
       <div class="card " >
-        <img src="./frontend/img/img3.jpg" class="card-img-top" alt="...">
+        <img src="./frontend/img/img3.png" class="card-img-top" alt="Cena 3>
         <!-- <div class="card-body">
           <p class="card-text">Cena do Jogo 3</p>
         </div> -->

@@ -1,6 +1,27 @@
 <?php
   
   if (!isset($_SESSION)) session_start();
+
+  if(isset($_REQUEST['confirmesenha'])){
+    echo "<script>
+    alert('A senha e a confirmação devem ser iguais!'); 
+    window.location.href='./atualizaCadastro.php' 
+  </script>";
+  }
+
+  if(isset($_REQUEST['lensenha'])){
+    echo "<script>
+    alert('A senha deve conter 8 dígitos!'); 
+    window.location.href='./atualizaCadastro.php' 
+  </script>";
+  }
+
+  if(isset($_REQUEST['sucessoatualizacao'])){
+    echo "<script>
+    alert('Atualização realizada com sucesso!'); 
+    window.location.href='./perfil.php' 
+  </script>";
+  }
   
   if (!$_SESSION)
     echo "<script>
@@ -70,7 +91,7 @@
   </head>
 
 
-  <body onload="get()">
+  <body onload="get(), abrirModal()">
 
     <?php 
       require "./templates/menu/menu.php";
@@ -105,9 +126,19 @@
               </div>
             
               <div class="col-12">
+
+              <script>
+              function abrirModal(){
+
+                var botao = document.getElementById('perfil');
+            botao.click();
+              }
+            
+
+              </script>
               
                 <!-- Button trigger modal -->
-                <a type="button" class="linkModal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <a type="button" id="perfil" class="linkModal" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Medalhas Conquistadas
                 </a>
                 <a type="button" class="float-right linkModal" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -139,10 +170,6 @@
 
                                     <?php  }else{?>
 
-                                    <!-- <div class="card-text justify-content-center">
-                                      <p class="imagem">Você ainda não possui essa medalha</p>
-                                    </div> -->
-
                                     <div class="card-text justify-content-center">
                                       <img class="imagemDesativada" src="../img/m1.png">
                                     </div>
@@ -163,10 +190,6 @@
 
                                   <?php  }else{?>
 
-                                  <!-- <div class="card-text">
-                                    <p class="imagem">Você ainda não possui essa medalha</p>
-                                  </div> -->
-
                                   <div class="card-text justify-content-center">
                                       <img class="imagemDesativada" src="../img/m2.png">
                                   </div>
@@ -185,10 +208,6 @@
                                   </div>
 
                                   <?php  }else{?>
-
-                                  <!-- <div class="card-text">
-                                    <p class="imagem">Você ainda não possui essa medalha</p>
-                                  </div> -->
 
                                   <div class="card-text justify-content-center">
                                       <img class="imagemDesativada" src="../img/m3.png">
@@ -209,10 +228,6 @@
 
                                   <?php  }else{?>
 
-                                  <!-- <div class="card-text">
-                                    <p class="imagem">Você ainda não possui essa medalha</p>
-                                  </div> -->
-
                                   <div class="card-text justify-content-center">
                                       <img class="imagemDesativada" src="../img/m4.png">
                                   </div>
@@ -231,10 +246,6 @@
                                   </div>
 
                                   <?php  }else{?>
-
-                                  <!-- <div class="card-text">
-                                    <p class="imagem">Você ainda não possui essa medalha</p>
-                                  </div> -->
 
                                   <div class="card-text justify-content-center">
                                       <img class="imagemDesativada" src="../img/m5.png">
@@ -255,10 +266,6 @@
 
                                   <?php  }else{?>
 
-                                  <!-- <div class="card-text">
-                                    <p class="imagem">Você ainda não possui essa medalha</p>
-                                  </div> -->
-
                                   <div class="card-text justify-content-center">
                                       <img class="imagemDesativada" src="../img/m6.png">
                                   </div>
@@ -277,10 +284,6 @@
                                   </div>
 
                                   <?php  }else{?>
-
-                                  <!-- <div class="card-text">
-                                    <p class="imagem">Você ainda não possui essa medalha</p>
-                                  </div> -->
 
                                   <div class="card-text justify-content-center">
                                       <img class="imagemDesativada" src="../img/m7.png">
@@ -301,10 +304,6 @@
 
                                   <?php  }else{?>
 
-                                  <!-- <div class="card-text">
-                                    <p class="imagem">Você ainda não possui essa medalha</p>
-                                  </div> -->
-                                  
                                   <div class="card-text justify-content-center">
                                       <img class="imagemDesativada" src="../img/m8.png">
                                   </div>
@@ -324,10 +323,6 @@
 
                                   <?php  }else{?>
 
-                                  <!-- <div class="card-text">
-                                    <p class="imagem">Você ainda não possui essa medalha</p>
-                                  </div> -->
-
                                   <div class="card-text justify-content-center">
                                       <img class="imagemDesativada" src="../img/m9.png">
                                   </div>
@@ -343,7 +338,7 @@
 
                                   <div class="card-text">
                                     <img class="imagem" src="../img/m10.png">
-                                    <p class="imagem"> Criar horta vertical</p>
+                                    <p class="imagem"> Concluir o FavelAção</p>
                                   </div>
 
                                   <?php  }else{?>
@@ -378,25 +373,20 @@
       
             <input type="hidden" name="imgAvatar" value="<?php echo $_SESSION['user']['imgAvatar']; ?>" required/>
             <button type="submit" class="btn btn-block boton">Editar</button>
+           <a href="./selectMission.php"><button type="button" class="btn btn-block boton btnJogar">Jogar</button><a>
           </div>    
         </form>
-        
           <form method="POST" action="./validacoes/validacaoPerfil.html">
             <button type="submit" class="btn neo-button"><i class="fa fa-trash"></i></button>
           </form>
-      
           <br/>
       </div>
    </div>      
    <br/><br/>
 
     
-  
-  <footer>
-    <?php 
-      require "./templates/rodape/rodape.php";
-      ?>
-  </footer>
+   
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -411,6 +401,12 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+  <footer>
+    <?php
+      include("./templates/rodape/rodape.php")
+    ?>
+  </footer>
     
 </body>
 

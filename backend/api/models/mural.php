@@ -4,7 +4,7 @@ class Mural {
     private $conn;
     private $nomeTabela = "mural";
 
-    public $idmural;
+  
     public $nome;
     public $imagem;
     
@@ -16,7 +16,7 @@ class Mural {
 
 function creat(){
     
-     $sql = "INSERT INTO `favelacao`.`mural` (`nome`, `imagem`) VALUES ( '".$this->nome."' , '".$this->imagem."' )";
+     $sql = "INSERT INTO `mural` (`nome`, `imagem`) VALUES ( '".$this->nome."' , '".$this->imagem."' )";
     
     $stmt = $this->conn->prepare($sql);
     

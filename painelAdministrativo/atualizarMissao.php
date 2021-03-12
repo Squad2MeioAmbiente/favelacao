@@ -82,7 +82,7 @@
 
           </div>
 
-          <form action="../../Painel-ADM-FavelAcao/backend/missao/updat.php?idmissao= <?php echo $_SESSION['missao']['idmissao']?>" method="POST">
+          <form action="../painelAdministrativo/backend/missao/updat.php?idmissao= <?php echo $_SESSION['missao']['idmissao']?>" method="POST">
             <div class="card-group">
               <div class="card">
                 <div class="card-body">
@@ -155,9 +155,10 @@
                   <div class="row-2 margem d-grid gap-2 d-md-flex justify-content-md-end">
                     <label class="selecaolabel">Posição: </label>
                     <select class="selecao" name="posicao" id="posicao">
-                      <option value= "<?php echo $_SESSION['missao']['posicao']?>" selected><?php echo $_SESSION['missao']['posicao']?> </option>
-                      <option value="Braço para cima" >Braço para cima</option>
-                      <option value="Braço para baixo">Braço para baixo</option>
+                        <option value= "<?php echo $_SESSION['missao']['posicao']?>" selected><?php echo $_SESSION['missao']['posicao']?> </option>
+                        <option value="Braço para cima" >Braço para cima</option>
+                        <option value="Braço para baixo">Braço para baixo</option>
+                      
                     </select>
                 </div>
               </div>
@@ -203,7 +204,7 @@
                       <div class="cenarios">
                         <label>Outro: </label>
                         <div class="input-group mb-3">
-                          <input type="file" name="cenario" class="btnarquivo form-control">
+                          <input type="file" name="outrocenario" class="btnarquivo form-control">
                           <!-- <label class="input-group-text" for="inputGroupFile02">Upload</label> -->
                         </div>
                         <!-- <input class="btnarquivo" type="file" name="cenario" class="form-control" /> -->

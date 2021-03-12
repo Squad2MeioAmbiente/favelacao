@@ -40,11 +40,11 @@
             </script>";
         } 
         else{ 
-            $sql = "INSERT INTO usuarios (nome, dataNascimento, email, telefone, senha, confirmarSenha, categoriaSecreta, respSecreta, apelido, imgAvatar) VALUES ('$nome', '$dataNascimento', '$email', '$telefone', '$senha', '$confirmarSenha', '$categoriaSecreta', '$respSecreta', '$apelido', '$imgAvatar' )"; 
+            $sql = "INSERT INTO usuarios (nome, dataNascimento, email, telefone, senha, confirmarSenha, categoriaSecreta, respSecreta, apelido, imgAvatar) VALUES    ('$nome', '$dataNascimento', '$email', '$telefone', '$senha', '$confirmarSenha', '$categoriaSecreta', '$respSecreta', '$apelido', '$imgAvatar' )"; 
             
-            $sql2 = "INSERT INTO `favelacao`.`savegame` (`email`, `missao1`, `missao2`, `missao3`, `missao4`, `missao5`, `missao6`, `missao7`, `missao8`, `missao9`, `missao10`) VALUES ('$email', 'TRUE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE')";
+            $sql2 = "INSERT INTO savegame (email, missao1, missao2, missao3, missao4, missao5, missao6, missao7, missao8, missao9, missao10) VALUES ('$email', 'TRUE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE')";
 
-            $sql3 = "INSERT INTO `favelacao`.`medalhas` (`email`, `medalha1`, `medalha2`, `medalha3`, `medalha4`, `medalha5`, `medalha6`, `medalha7`, `medalha8`, `medalha9`, `medalha10`) VALUES ('$email', 'TRUE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE')";
+            $sql3 = "INSERT INTO medalhas (email, medalha1, medalha2, medalha3, medalha4, medalha5, medalha6, medalha7, medalha8, medalha9, medalha10) VALUES ('$email', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE', 'FALSE')";
             
             $result = mysqli_query($conn, $sql); 
             

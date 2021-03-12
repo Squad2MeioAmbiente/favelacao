@@ -71,8 +71,7 @@ function update(){
         personagem = '".$this->personagem."',
         expressao = '".$this->expressao."',
         posicao = '".$this->posicao."',
-        cenario = '".$this->cenario."'
-               
+        cenario = '".$this->cenario."'    
     WHERE
         idmissao =". $_REQUEST['idmissao'];
  

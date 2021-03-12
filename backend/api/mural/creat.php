@@ -1,21 +1,11 @@
+
 <?php
 
-// header("Access-Control-Allow-Origin: *");
-// header("Content-Type: application/json; charset=UTF-8");
-// header("Access-Control-Allow-Methods: POST");
-// header("Access-Control-Max-Age: 3600");
-// header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
-  
-include_once '../config/dataBase.php';
-include_once '../models/mural.php';
-  
-$database = new Database();
-$db = $database->getConnection();
-  
-$mural = new Mural($db);
-  
+require_once('../config/dblogincad.php');
+session_start();
 
-$data = json_decode(file_get_contents("php://input"));
+
+
 
 if(isset($_FILES['arquivo'])){
     //Aqui pego os 4 ultimos digitos e mando pra lowercase
@@ -28,25 +18,24 @@ if(isset($_FILES['arquivo'])){
     //por default
     move_uploaded_file($_FILES['arquivo']['tmp_name'],$diretorio.$novo_nome);
 
+$nome = $_SESSION['user']['nome'];
 
-    session_start();
-
-    $mural->nome = $_SESSION['user']['nome'];
-    $mural->imagem = $novo_nome;
-
-    $mural->creat();
+$imagem = $novo_nome;
 
 
-};
+$sql = "INSERT INTO `mural` (`nome`, `imagem`) VALUES ( '".$nome."' , '".$imagem."' )";
+    
+$result = mysqli_query($conn, $sql);
+
+}
 ?>
 
+
 <html>
-<?php echo $mural->imagem;
-echo $mural->nome;  ?>
 
 <?php echo "<script>
                 alert ('Imagem Salva!')
-                window.location.href='../../../frontend/jogo/selectMission.php'
+                window.location.href='../../../frontend/jogo/missoes/missao3/index2.html'
             </script>";?>
 
 </html>

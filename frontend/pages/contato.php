@@ -38,9 +38,7 @@
         
           <div class="form-group col-sm">
                 <label >Nome*</label>
-                <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite seu nome" maxlength="25"  minlength="3"  class="form-control"
-                
-                pattern="^[^-\s][a-zA-ZÀ-ú ]*" required>
+                <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite seu nome" maxlength="25"  minlength="3"  class="form-control" pattern="^[^-\s][a-zA-ZÀ-ú ]*" required>
                 <label >E-mail*</label>
                 <input type="email" name="email" class="form-control" id="nome" placeholder="Digite seu e-mail"maxlength="50"  required>
               

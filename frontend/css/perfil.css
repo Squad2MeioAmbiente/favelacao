@@ -158,6 +158,37 @@ color: red;
 
 }
 
+.btnJogar {
+  background-color: #ffb703;
+  font-size: 15px ;
+  color: #fff;
+}
+
+@media screen and (max-width: 360px) {
+  .fa-trash {
+  margin-left: 50%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .fa-trash {
+  margin-left: 40%;
+  }
+}
+
+@media screen and (width: 540px) {
+  .fa-trash {
+  margin-left: 70%;
+  }
+}
+
+
+@media screen and (width: 768px) {
+  .fa-trash {
+  margin-left: 300% !important;
+  }
+}
+
 
 @media screen and (max-width: 900px) {
   main div:nth-child(2) {
@@ -189,4 +220,16 @@ color: red;
   .card-body{
     width:100%;
   }
+
+  .fa-trash {
+    margin-left: 10%;
+    }
+
+}
+
+@media screen and (width: 1024px) {
+    .fa-trash {
+    margin-left: 30%;
+    }
+
 }

@@ -1,55 +1,86 @@
-
- var contFrase = 1
- var contCenario = 1
- var contPersonagem = 1
+ var contFrase = -1
+ var contCenario = -1
+ var contPersonagem = -1
  var contadorSom = 0
 
+ function botaoVoltar(){
+  document.getElementById("anterior").style.display = "none"; 
+
+ }
+ 
+ function exibeBotao(){
+  document.getElementById("anterior").style.display = "none"; 
+  document.getElementById("prox").style.display = "block"; 
+
+ }
+
  async function back (){
+   if((contFrase>0) && (contCenario>0) && (contPersonagem >0)){
+   
+  console.log(contFrase)
+  contFrase--
+  contPersonagem--
+  contCenario--
+
   var response = await fetch("../../../../backend/api/enredo/read.php") 
   var dados = await response.json()   
   var txt =document.getElementById("txt")
   var imgCenario = document.getElementById("fundo")
   var imgPersonagem = document.getElementById("personagemImg")
-
-  if(contFrase >= 1 && contPersonagem >= 1 && contCenario >=1){
-    contFrase--
-    contPersonagem--
-    contCenario--
-    txt.innerHTML = dados[contFrase].frase
-  }
+txt.innerHTML = dados[contFrase].frase
   imgPersonagem.src= `../img/character/${dados[contPersonagem].personagem}`
   imgCenario.style.backgroundImage = `url('../img/background/${dados[contCenario].cenario}')`;
 
-  if(contFrase == 46) {
+  if(contFrase == 44) {
     questionario()
     medalhaGanhas()
   } else {
     
   }
+  
+}else {
+
+
+  document.getElementById("anterior").style.display = "none"; 
 
 }
 
-//Fim função Back
+}
+
 
 async function next (){ 
+  document.getElementById("anterior").style.display = "block"; 
+  if((contFrase<=46) && (contCenario<=46) && (contPersonagem <=46)){
+  console.log(contFrase)
+    contFrase++
+    contPersonagem++
+    contCenario++
+
+
   var response = await fetch("../../../../backend/api/enredo/read.php") 
   var dados = await response.json()   
   var txt =document.getElementById("txt")
   var imgCenario = document.getElementById("fundo")
   var imgPersonagem = document.getElementById("personagemImg")
-    contFrase++
-    contPersonagem++
-    contCenario++
     txt.innerHTML = dados[contFrase].frase  
   imgPersonagem.src= `../img/character/${dados[contPersonagem].personagem}`
   imgCenario.style.backgroundImage = `url('../img/background/${dados[contCenario].cenario}')`;
   
-  if(contFrase == 45) {
+  
+
+  if(contFrase == 44) {
     questionario()
     
-  } else  if(contFrase == 47) {
-    medalhaGanhas()
+    
+  } else  if(contFrase == 45) {
+   
   }
+
+} else {
+
+  document.getElementById("prox").style.display = "none"; 
+
+}
   
 }
 
@@ -81,7 +112,7 @@ function questionario() {
   
   var yes = document.createElement('img');
     yes.setAttribute("onClick", "btnsound()")
-    yes.setAttribute("onClick", "yes()")
+    yes.setAttribute("onClick", "yes(),  medalhaGanhas()")
     yes.setAttribute("id", "rmyes")
     yes.setAttribute("src", "../img/icones/iconeSim.png") ;
   
@@ -102,7 +133,6 @@ function questionario() {
 
   
 }
-
 
 
 function yes(){
@@ -129,6 +159,7 @@ function no(){
 
 function fetchSalvar(){
   var url = "../../../../backend/api/saveGame/save1.php"
+  window.location.href ="../../../pages/selectMission.php";
   
   fetch(url,{
     method:"POST"   

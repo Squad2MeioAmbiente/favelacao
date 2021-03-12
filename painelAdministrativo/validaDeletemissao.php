@@ -8,7 +8,7 @@
 
   if(confirmaExclusao) {
 
-  window.location.href='../Painel-ADM-FavelAcao/backend/missao/delet.php?idmissao=<?php echo $_REQUEST['idmissaod']?>'
+  window.location.href='../painelAdministrativo/backend/missao/delet.php?idmissao=<?php echo $_REQUEST['idmissaod']?>'
   } else {
     window.location.href='./alterarmissao.php?idmissao=<?php echo $_REQUEST['idmissaod']?>'
   }

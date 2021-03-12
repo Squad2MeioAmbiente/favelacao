@@ -21,9 +21,9 @@
     $missao->expressao = $_POST['expressao'];
     $missao->posicao = $_POST['posicao'];
     if ($_POST['outrocenario']!==""){
-        $missao->posicao = $_POST['outrocenario']; 
+        $missao->cenario = $_POST['outrocenario']; 
     }else{
-        $missao->posicao = $_POST['cenario']; 
+        $missao->cenario = $_POST['cenario']; 
     }
     
 

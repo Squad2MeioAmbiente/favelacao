@@ -339,7 +339,7 @@ while ($row = mysqli_fetch_array($result3)) {
                 <div class="col-sm-6">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Conclusão de missões por criança</h5>
+                      <h5 class="card-title">Quantidade de missões concluídas</h5>
                       <div class="card border border-1">
                         <canvas class="my-4 w-100" id="myIdade" width="900" height="380"></canvas>
                       </div>
@@ -412,6 +412,7 @@ while ($row = mysqli_fetch_array($result3)) {
                     labels:['1°', '2°', '3°', '4°','5°', '6°', '7°', '8°', '9', '10°'],
                     datasets:[{
                         label:'Missão',
+                        
                         data:[<?php echo $totalMedalhas1?>, <?php echo $totalMedalhas2?>, <?php echo $totalMedalhas3 ?>, <?php echo $totalMedalhas4 ?>, <?php echo $totalMedalhas5 ?>, <?php echo $totalMedalhas6 ?>, <?php echo $totalMedalhas7 ?>, <?php echo $totalMedalhas8 ?>, <?php echo $totalMedalhas9 ?>, <?php echo $totalMedalhas10 ?>],
                         backgroundColor:[
                             'rgb(32, 108, 223,0.6)',

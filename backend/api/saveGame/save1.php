@@ -6,7 +6,7 @@ session_start();
 
 $savUsuario = $_SESSION['save']['email'];
 
-$sql = "UPDATE `favelacao`.`savegame` SET `missao2` = 'TRUE' WHERE (`email` = '$savUsuario')";
+$sql = "UPDATE `savegame` SET `missao2` = 'TRUE' WHERE (`email` = '$savUsuario')";
 $_SESSION['save']['missao2'] = "TRUE";
 
 $result = mysqli_query($conn, $sql);

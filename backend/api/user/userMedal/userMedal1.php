@@ -6,7 +6,7 @@ session_start();
 
 $savUsuario = $_SESSION['medal']['email'];
 
-$sql = "UPDATE `favelacao`.`medalhas` SET `medalha1` = 'TRUE' WHERE (`email` = '$savUsuario');";
+$sql = "UPDATE `medalhas` SET `medalha1` = 'TRUE' WHERE (`email` = '$savUsuario');";
 $_SESSION['medal']['medalha1'] = "TRUE";
 
 $result = mysqli_query($conn, $sql);

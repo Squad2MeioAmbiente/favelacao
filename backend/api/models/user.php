@@ -102,6 +102,7 @@ function update(){
     }
   
     return false;
+
 }
 
 function delete(){
@@ -139,7 +140,7 @@ function delete(){
 
 function updateSaveMail(){
   
-    $sql = "UPDATE `favelacao`.`savegame` SET `email` = '".$this->email."' WHERE `idsavegame` = ".$this->id;
+    $sql = "UPDATE savegame SET email = '".$this->email."' WHERE idsavegame = ".$this->id;
         
 
     $stmt = $this->conn->prepare($sql);
@@ -154,7 +155,7 @@ function updateSaveMail(){
 
 function deleteSaveMail(){
     
-    $sql = "DELETE FROM `favelacao`.`savegame` WHERE `idsavegame` =".$this->id;
+    $sql = "DELETE FROM savegame WHERE idsavegame =".$this->id;
 
     $stmt = $this->conn->prepare($sql);
   
@@ -167,7 +168,7 @@ function deleteSaveMail(){
 
 function updateMedalMail(){
   
-    $sql = "UPDATE `favelacao`.`medalhas` SET `email` = '".$this->email."' WHERE `idmedalhas` = ".$this->id;
+    $sql = "UPDATE medalhas SET email = '".$this->email."' WHERE idmedalhas = ".$this->id;
         
 
     $stmt = $this->conn->prepare($sql);
@@ -182,7 +183,7 @@ function updateMedalMail(){
 
 function deleteMedalMail(){
     
-    $sql = "DELETE FROM `favelacao`.`medalhas` WHERE `idmedalhas` =".$this->id;
+    $sql = "DELETE FROM medalhas WHERE idmedalhas =".$this->id;
 
     $stmt = $this->conn->prepare($sql);
   
