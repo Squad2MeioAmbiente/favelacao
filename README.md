@@ -27,6 +27,9 @@
 <hr>
 
 <h2 align="center">Mas o que é FavelAção?</h2>    
+ <a href="http://favelacao.epizy.com/favelacao/">
+	<p align="center">Aplicação Web</p>
+</a>
 <p> O projeto Favelação é um jogo voltado para crianças de Héliopolis, uma das maiores favelas de São Paulo, que visa
 a conscientização de maneira lúdica e divertida sobre o descarte correto de lixo e a importância do meio ambiente.
 <br>
