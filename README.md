@@ -105,7 +105,7 @@ As missões são atividades práticas, típico mão na massa, fazendo a criança
 <hr>
 
 <p>Aperte o Play e assista o Pitch  
-   <a href="https://www.youtube.com/watch?v=6LmjnU9_kuY">
+   <a href="https://www.youtube.com/watch?v=0qYxWqiWSWg&ab_channel=devdlima">
 	<img src="https://icongr.am/entypo/controller-play.svg?size=49&color=f31212">
    </a>
 </p>
