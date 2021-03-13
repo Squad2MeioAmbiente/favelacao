@@ -68,10 +68,10 @@
                 <input type="text" name="telefone" value="<?php echo $_SESSION['user']['telefone']; ?>" class="form-control" pattern="^\d{2}-\d{5}-\d{4}$" required/>
             
                 <label>Senha</label>
-                <input type="password" name="senha" value="<?php echo $_SESSION['user']['senha']; ?>" class="form-control" minlength="8" maxlength="8" required/>
+                <input type="password" name="senha" class="form-control" minlength="8" maxlength="8" required/>
 
                 <label>Confirme sua Senha</label>
-                <input type="password" name="confirmarSenha" value="<?php echo $_SESSION['user']['confirmarSenha']; ?>" class="form-control" maxlength="8" required/>
+                <input type="password" name="confirmarSenha" class="form-control" maxlength="8" required/>
             
                 <label>Escolha a categoria da palavra secreta:</label><br/>
                 <select class="selecao mb-3" name="categoriaSecreta" id="categoriaSecreta" required>
