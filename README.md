@@ -22,7 +22,7 @@
 	 "O ODS 12 tem por objetivo assegurar o manejo responsável de recursos, visando a melhora da eficiência energética e a implementação de infraestrutura sustentável, além do fornecimento a serviços básicos, trabalhos decentes e sustentáveis e garantindo uma melhor qualidade de vida à todos"
 </p>
 <p> 
-	Visando a proposta da ODS, visamos nosso projeto voltado para a educação infantil sobre o descarte correto de lixo, através do jogo FavelAção.
+	Visando a proposta da ODS, focamos nosso projeto voltando para a educação infantil sobre o descarte correto de lixo, através do jogo FavelAção.
 </p>
 <hr>
 
