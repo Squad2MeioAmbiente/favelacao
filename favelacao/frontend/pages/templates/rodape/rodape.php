@@ -19,16 +19,16 @@
 
     <div class="col-sm-2">
         <h3>SUPORTE </h3>
-        <a href="../pages/Erro.html" title="Ajuda"><h3>Perguntas Frequentes</h3></a>
+        <a href="../pages/ajuda.php" title="Ajuda"><h3>Perguntas Frequentes</h3></a>
         <a href="../pages/contato.php" title="Contato"><h3>Fale Conosco</h3></a>
         
     </div>
 
     <div class="col-sm-3">
         <h3>SIGA-NOS </h3>
-        <a href="../pages/Erro.html" title="facebook"><img src="<?php $_SERVER['SERVER_NAME'] ?>/favelacao/frontend/pages/templates/rodape/img/iconFacebook.png"/></a>   
-        <a href="../pages/Erro.html" title="intagram"><img src="<?php $_SERVER['SERVER_NAME'] ?>/favelacao/frontend/pages/templates/rodape/img/iconInstagram.png"/></a> 
-        <a href="https://github.com/Squad2MeioAmbiente" target="_blank" title="intagram"> <img src="<?php $_SERVER['SERVER_NAME'] ?>/favelacao/frontend/pages/templates/rodape/img/iconGithub.png"/></a> 
+        <a href="https://www.facebook.com/Favela%C3%A7%C3%A3o-105202514976335" target="_blank" title="facebook"><img src="<?php $_SERVER['SERVER_NAME'] ?>/favelacao/frontend/pages/templates/rodape/img/iconFacebook.png"/></a>   
+        <a href="https://www.instagram.com/favelacao/" target="_blank" title="intagram"><img src="<?php $_SERVER['SERVER_NAME'] ?>/favelacao/frontend/pages/templates/rodape/img/iconInstagram.png"/></a> 
+        <a href="https://github.com/favelacao" target="_blank" title="intagram"> <img src="<?php $_SERVER['SERVER_NAME'] ?>/favelacao/frontend/pages/templates/rodape/img/iconGithub.png"/></a> 
        
     </div>
     

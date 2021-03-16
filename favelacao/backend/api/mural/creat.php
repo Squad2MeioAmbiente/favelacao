@@ -1,57 +1,43 @@
+
 <?php
 
-header("Access-Control-Allow-Origin: *");
-header("Content-Type: application/json; charset=UTF-8");
-header("Access-Control-Allow-Methods: POST");
-header("Access-Control-Max-Age: 3600");
-header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
-  
-include_once '../config/dataBase.php';
-include_once '../models/mural.php';
-  
-$database = new Database();
-$db = $database->getConnection();
-  
-$mural = new Mural($db);
-  
+require_once('../config/dblogincad.php');
+session_start();
 
-$data = json_decode(file_get_contents("php://input"));
 
-if(
-    !empty($data->nome) &&
-    !empty($data->imagem) 
+
+
+if(isset($_FILES['arquivo'])){
+    //Aqui pego os 4 ultimos digitos e mando pra lowercase
+    $extensao = strtolower(substr($_FILES['arquivo']['name'], -4));
+    //Aqui crio um novo titulo único e adiciono a extensao formatada
+    $novo_nome = md5(time()) . $extensao;
+    //Aqui seleciono para onde quero mudar a foto
+    $diretorio = "../../../frontend/img/mural/";
+    //Aqui mudo o titulo do arquivo e seleciono para onde mover ele, a partir da pasta que o php armazena
+    //por default
+    move_uploaded_file($_FILES['arquivo']['tmp_name'],$diretorio.$novo_nome);
+
+$nome = $_SESSION['user']['apelido'];
+
+$imagem = $novo_nome;
+
+
+$sql = "INSERT INTO `mural` (`nome`, `imagem`) VALUES ( '".$nome."' , '".$imagem."' )";
     
-){
-  
-    
-    $mural->nome = $data->nome;
-    $mural->imagem = $data->imagem;
-   
-      
+$result = mysqli_query($conn, $sql);
 
-    if($mural->creat()){
-  
-       
-        http_response_code(201);
-  
-        
-        echo json_encode(array("message" => "Imagem enviada com sucesso."));
-    }
-  
-    
-    else{
-  
-        http_response_code(503);
-  
-        echo json_encode(array("message" => "Não foi possível enviar sua imagem."));
-    }
-}
-  
-else{
-  
-    http_response_code(400);
-  
-
-    echo json_encode(array("message" => "Não foi possível enviar sua imagem. Os dados estão incorretos."));
 }
 ?>
+
+
+<html>
+
+<?php echo "<script>
+                alert ('Imagem Salva!')
+                window.location.href='../../../frontend/jogo/missoes/missao3/index2.html'
+            </script>";?>
+
+</html>
+
+

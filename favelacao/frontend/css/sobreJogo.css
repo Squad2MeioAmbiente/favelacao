@@ -32,6 +32,7 @@ body {
 .button {
     text-align: center;
 }
+
 .buttonJogar {  
     margin-top: 20px;  
     width: 198px;
@@ -44,8 +45,20 @@ body {
     outline: none;  
     border:none !important;
     margin-bottom: 32px;
-   
+    cursor: pointer;
+    box-shadow: 1px 2px 15px #fcc63e; 
+}
+.buttonJogar .btn:focus{
+  outline: thin dotted;
+      outline: 0px auto -webkit-focus-ring-color;
+      outline-offset: 0px;
   }
+  .buttonJogar:focus {
+   outline: thin dotted;
+      outline: 0px auto -webkit-focus-ring-color;
+      outline-offset: 0px;
+  }
+
 
 .missao {
     text-align: center;
@@ -70,10 +83,14 @@ body {
     border-width: 4px !important;
     border-color: #FFB703 !important;
     margin: 15px;;  
-    width: 100%;
-
-  
+    width: 250px;
+    height: 250px;  
 } 
+
+.card .imagemMissao {
+  width: 100%;
+  height: 250px;  
+}
 
 .card-title {
     color: #219EBC;
@@ -82,4 +99,7 @@ body {
     font-size: 16px;
 }
 
-
+/* .iconMegafone {
+  width: 150px;
+  background-color: red;
+} */

@@ -34,7 +34,7 @@
       <a href="./pages/login.php"><button class="buttonJogar">JOGAR</button></a>
 
       <?php  }else{?>
-      <a href="./jogo/screen1/s1.html"><button class="buttonJogar">JOGAR</button></a>
+      <a href="./pages/selectMission.php"><button class="buttonJogar">JOGAR</button></a>
     <?php }?>
     </div> 
   </div>
@@ -85,19 +85,19 @@
 
     <div class="missaoBox">
       <div class="card " >
-        <img src="./img/img1.jpg" class="card-img-top" alt="...">
+        <img src="./img/img1.png" class="card-img-top" alt="...">
         <!-- <div class="card-body">
           <p class="card-text">Cena do Jogo 1</p>
         </div> -->
       </div>
       <div class="card " >
-        <img src="./img/img2.jpg" class="card-img-top" alt="...">
+        <img src="./img/img2.png" class="card-img-top" alt="...">
         <!-- <div class="card-body">
           <p class="card-text">Cena do Jogo 2</p>
         </div> -->
       </div>
       <div class="card " >
-        <img src="./img/img3.jpg" class="card-img-top" alt="...">
+        <img src="./img/img3.png" class="card-img-top" alt="...">
         <!-- <div class="card-body">
           <p class="card-text">Cena do Jogo 3</p>
         </div> -->

@@ -14,8 +14,8 @@
         $result = mysqli_query($conn, $sql); 
         if($result){ 
             echo "<script>
-                alert ('Mensagem enviada com sucesso!')
-                window.location.href='../../../frontend/pages/login.php'
+                alert ('Mensagem enviada com sucesso! Agradecemos!')
+                window.location.href='../../../frontend/pages/contato.php'
             </script>";
         }
         
@@ -30,13 +30,12 @@
     
     else{
         echo "<script>
-              window.location.href='../../../frontend/pages/contato.php'
+            window.location.href='../../../frontend/pages/contato.php'
         </script>";
     
     } 
     
 ?>  
-
 
 
 

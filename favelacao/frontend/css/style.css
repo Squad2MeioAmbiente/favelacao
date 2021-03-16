@@ -64,7 +64,19 @@ html, body {
   font-size: 32px;
   font-weight: 700;  
   outline: none;  
+  box-shadow: 1px 2px 15px #fcc63e; 
 }
+
+.buttonJogar .btn:focus{
+  outline: thin dotted;
+      outline: 0px auto -webkit-focus-ring-color;
+      outline-offset: 0px;
+  }
+  .buttonJogar:focus {
+   outline: thin dotted;
+      outline: 0px auto -webkit-focus-ring-color;
+      outline-offset: 0px;
+  }
 
 .textDescricao {
   width: 100%; 

@@ -5,9 +5,9 @@ body {
 html, body {
   font-family: 'Roboto', sans-serif;
   font-size: medium; 
-
 }
-.titulo {
+
+.tituloPerfil {
   color: #fff;
   font-size: 30px;
   text-align: center;
@@ -42,7 +42,7 @@ main div:nth-child(2) {
 }
 
 .formulario {
-  width:40%;
+  width:60%;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 1px 5px 222px #8ECAE6; 
   background-color:#fff ; 
@@ -51,7 +51,19 @@ main div:nth-child(2) {
 }
 label, h3 {
   color:#219EBC;
-  margin-top: 20px;
+  margin: 0%;
+}
+
+
+p{
+  color:#fb8500; 
+  margin-bottom: -10px;
+}
+
+.card-body{
+  width:500px;
+  justify-content: center;
+  margin:auto;
 }
 
 .logimg {
@@ -68,7 +80,7 @@ label, h3 {
   border-radius: 20px;
   transition: 0.2s;
   margin-right: 20px;
-  margin-top:20px;
+  margin-top:30px;
 }
 
 .boton:hover {
@@ -117,7 +129,66 @@ color: red;
 .fa-trash {
   color: tomato;
   font-size: 30px !important;
+  margin-left: 150px;
 }
+
+.linkModal{
+  cursor: pointer;
+}
+
+.cardModal{
+  font-size:12px;
+  text-align: center;
+}
+
+.modal-title{
+  color:#219EBC;
+}
+
+.imagem{
+  width:80px;
+  color: #219EBC;
+  font-weight: bold;
+}
+
+
+.imagemDesativada {
+  width:80px;
+  opacity: 35%;
+
+}
+
+.btnJogar {
+  background-color: #ffb703;
+  font-size: 15px ;
+  color: #fff;
+}
+
+@media screen and (max-width: 360px) {
+  .fa-trash {
+  margin-left: 50%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .fa-trash {
+  margin-left: 40%;
+  }
+}
+
+@media screen and (width: 540px) {
+  .fa-trash {
+  margin-left: 70%;
+  }
+}
+
+
+@media screen and (width: 768px) {
+  .fa-trash {
+  margin-left: 300% !important;
+  }
+}
+
 
 @media screen and (max-width: 900px) {
   main div:nth-child(2) {
@@ -146,5 +217,19 @@ color: red;
     justify-content: center;
     margin:auto;
   }
+  .card-body{
+    width:100%;
+  }
+
+  .fa-trash {
+    margin-left: 10%;
+    }
+
+}
+
+@media screen and (width: 1024px) {
+    .fa-trash {
+    margin-left: 30%;
+    }
 
 }

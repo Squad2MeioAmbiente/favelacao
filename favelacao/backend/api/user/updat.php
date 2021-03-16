@@ -10,38 +10,70 @@
 
     $database = new Database();
     $db = $database->getConnection();
+        
+    
+    if (($_POST['senha'])!==($_POST['confirmarSenha'])){
+        header("Location: ../../../frontend/pages/perfil.php?confirmesenha=true"); 
+    } 
+    else if(strlen($_POST['senha'])!==8){
+        header("Location: ../../../frontend/pages/perfil.php?lensenha=true"); 
+    }
+    else{ 
 
-    $user = new User($db);
+        $user = new User($db);
+        
+        $user->id = $_POST['id'];
+        $user->nome = $_POST['nome'];
+        $user->dataNascimento = $_POST['dataNascimento']; 
+        $user->email = $_POST['email'];
+        $user->telefone = $_POST['telefone'];
+        $user->senha = md5($_POST['senha']);
+        $user->confirmarSenha = md5($_POST['confirmarSenha']);    
+        $user->categoriaSecreta = $_POST['categoriaSecreta'];    
+        $user->respSecreta = $_POST['respSecreta'];    
+        $user->apelido =  $_POST['apelido'];
+        $user->imgAvatar =  $_POST['imgAvatar'];
 
-    $user->id = $_POST['id'];
-    $user->nome = $_POST['nome'];
-    $user->dataNascimento = $_POST['dataNascimento']; 
-    $user->email = $_POST['email'];
-    $user->apelido =  $_POST['apelido'];
-    $user->imgAvatar =  $_POST['imgAvatar'];
-
-    if($user->update()){
-
-        http_response_code(200);
+        if($user->update()){
+    
+            
+            $user->updateSaveMail(); ////AQUI EXECUTAMOS O MÉTODO RESPONSAVEL PELO UPDATE DA TABELA DO SAV
+            $user->updateMedalMail(); ////AQUI EXECUTAMOS O MÉTODO RESPONSAVEL PELO UPDATE DA TABELA DAS MEDALHAS
 
 
-        if (!isset($_SESSION)) session_start();
+            http_response_code(200);
 
-        $_SESSION['user'] = [
-            'id' => $user->id,
-            'nome' => $user->nome,
-            'dataNascimento' => $user->dataNascimento,
-            'email' => $user->email,
-            'apelido' => $user->apelido,
-            'imgAvatar' => $user->imgAvatar,
-        ];
 
-        header("Location: ../../../frontend/pages/perfil.php"); 
-        exit;
+            if (!isset($_SESSION)) session_start();
+
+            $_SESSION['user'] = [
+                'id' => $user->id,
+                'nome' => $user->nome,
+                'dataNascimento' => $user->dataNascimento,
+                'email' => $user->email,
+                'telefone' => $user->telefone,
+                'senha' => $user->senha,
+                'confirmarSenha' => $user->confirmarSenha,
+                'categoriaSecreta' => $user->categoriaSecreta,
+                'respSecreta' => $user->respSecreta,
+                'apelido' => $user->apelido,
+                'imgAvatar' => $user->imgAvatar,
+            ];
+            
+            ////////AQUI ATRIBUIMOS OS DADOS DO UPDATE COM SAVE E MEDALHAS PARA A SESSÃO ATUAL
+            $_SESSION['save']['idsavegame'] = $user->id;
+            $_SESSION['save']['email'] = $user->email ;
+
+            $_SESSION['medal']['idmedalhas'] = $user->id;
+            $_SESSION['medal']['email'] = $user->email ;
+ 
+            header("Location: ../../../frontend/pages/perfil.php?sucessoatualizacao=true"); 
+            exit;
+        }else{
+            http_response_code(503);
+            echo json_encode(array("message" => "Usuário ". $_POST['id']. " não encontrado."));
+        }
     }
 
-    else{
-        http_response_code(503);
-        echo json_encode(array("message" => "Usuário ". $_POST['id']. " não encontrado."));
-    }
+    
 ?>

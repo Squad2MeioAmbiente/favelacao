@@ -61,16 +61,19 @@
       <form action="../../backend/api/user/conect_login.php" name="#" method="post"  class="needs-validation">
             
     
-              <label >Login</label>
-              <input type="email" name="email" class="form-control" id="" maxlength="50" placeholder="Seu email" required/>
+              <label>Login</label>
+              <input type="email" name="email" class="form-control" id="" maxlength="50" placeholder="Digite seu email" required/>
             
               <label>Senha</label>
-              <input type="password" name="senha" minlength="8" class="form-control" id="" placeholder="Insira sua senha" required/>
+              <input type="password" name="senha" minlength="8" class="form-control" id="" placeholder="Digite sua senha" required/>
             
               <button type="submit" class="btn btn-block boton">Entrar</button>
         
     
-            <a class="aLogin" href="./cadastro.php"> Ainda não tem conta? </a>
+            <a class="aLogin" href="./cadastro.php"> Ainda não tem conta? </a> <br>
+            <a class="aLogin" href="./recuperaSenha.php"> Esqueceu a senha? </a> <br>
+            <!-- <a class="aLogin" href="<?php $_SERVER['SERVER_NAME'] ?>/Painel-ADM-FavelAcao/index.php"> Acessar como administrador </a> -->
+
       </form>   
     </div>
   </div>

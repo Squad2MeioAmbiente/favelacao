@@ -18,6 +18,7 @@ html, body {
 }
 h1 {
   font-weight: bold;
+  font-size: 30px;
 }
 .imgContato {
   width: 60px;
@@ -97,4 +98,22 @@ color: red;
 
 }
 
+.neo-button {
+  width: 50px;
+  height: 50px;
+  outline: 0 !important;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  margin-left: 350px;
+  border-radius: 50%;
+  background-color: #fff;
+}
 
+.obrigatorio {
+font-size: 12px;
+color: #219EBC;
+font-weight: bold;
+padding: 2px;
+}

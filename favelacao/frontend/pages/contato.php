@@ -12,7 +12,7 @@
     <link rel="sortcut icon" href="../img/logo_Megafone_Grande.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/contato.css">
     
-    <title>Pagina de Contato</title>
+    <title>Página de Contato</title>
   </head>
 
 
@@ -38,9 +38,7 @@
         
           <div class="form-group col-sm">
                 <label >Nome*</label>
-                <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite seu nome" maxlength="25"  minlength="3"  class="form-control"
-                
-                pattern="^[^-\s][a-zA-ZÀ-ú ]*" required>
+                <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite seu nome" maxlength="25"  minlength="3"  class="form-control" pattern="^[^-\s][a-zA-ZÀ-ú ]*" required>
                 <label >E-mail*</label>
                 <input type="email" name="email" class="form-control" id="nome" placeholder="Digite seu e-mail"maxlength="50"  required>
               
@@ -48,6 +46,7 @@
                 <input type="text" name="assunto" class="form-control" id="assunto" placeholder="Digite o assunto" required>
                 <label for="mensagem">Mensagem*</label>
                 <textarea name="mensagem" class="form-control" rows="4" id="mensagem" required></textarea>
+                <p class="obrigatorio"> *Preenchimento obrigatório </p>
                 <button type="submit" class="btn btn-block boton">Enviar</button>
 
               </div>

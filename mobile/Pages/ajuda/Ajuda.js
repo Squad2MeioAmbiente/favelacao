@@ -11,7 +11,11 @@ function Ajuda({navigation}){
         <Text style={styles.titulo}>Ajuda</Text>       
         <Image style={styles.ImageVideo} source={ImageVideo}></Image>
         <Text sytle={styles.btn}
+
             onPress={() => Linking.openURL('https://www.youtube.com/embed/i8aYhuTvEFo')}>
+
+          
+
              Clique aqui e saiba como jogar
         </Text>
        
@@ -20,7 +24,7 @@ function Ajuda({navigation}){
       </View>
       
       <View style={styles.fundoBlue}>
-       <Text style={styles.tituloTwo}>Perguntas Frequentes
+      <Text style={styles.tituloTwo}>Perguntas Frequentes
       </Text>       
        <View style={styles.container}>     
 
@@ -131,8 +135,12 @@ const styles = StyleSheet.create({
   },
  respostas: {
    fontSize: 13,
+
    color: "#fff",  
    padding: 8, 
+
+   color: "#fff",   
+
 
  },
 

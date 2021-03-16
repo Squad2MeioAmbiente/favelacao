@@ -29,13 +29,9 @@
     <img  class="personagem" src="./frontend/img/helio_saudacao2.svg" alt="Hélio">  
     <div class="textoBanner">
       <img   src="./frontend/img/textoBanner2.svg" alt="Texto">
-      <?php if (!isset($_SESSION)) session_start();
-        if (!isset($_SESSION['user']['email'])){?>
-      <a href="./frontend/pages/login.php"><button class="buttonJogar">JOGAR</button></a>
+      
+      <a href="./frontend/pages/perfil.php"><button class="buttonJogar">JOGAR</button></a>
 
-      <?php  }else{?>
-      <a href="./frontend/jogo/screen1/s1.html"><button class="buttonJogar">JOGAR</button></a>
-    <?php }?>
     </div> 
   </div>
   <div class="textDescricao">
@@ -85,19 +81,19 @@
 
     <div class="missaoBox">
       <div class="card " >
-        <img src="./frontend/img/img1.jpg" class="card-img-top" alt="...">
+        <img src="./frontend/img/img1.png" class="card-img-top" alt="Cena 1">
         <!-- <div class="card-body">
           <p class="card-text">Cena do Jogo 1</p>
         </div> -->
       </div>
       <div class="card " >
-        <img src="./frontend/img/img2.jpg" class="card-img-top" alt="...">
+        <img src="./frontend/img/img2.png" class="card-img-top" alt="Cena 2">
         <!-- <div class="card-body">
           <p class="card-text">Cena do Jogo 2</p>
         </div> -->
       </div>
       <div class="card " >
-        <img src="./frontend/img/img3.jpg" class="card-img-top" alt="...">
+        <img src="./frontend/img/img3.png" class="card-img-top" alt="Cena 3>
         <!-- <div class="card-body">
           <p class="card-text">Cena do Jogo 3</p>
         </div> -->
