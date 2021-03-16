@@ -11,7 +11,7 @@ function Ajuda({navigation}){
         <Text style={styles.titulo}>Ajuda</Text>       
         <Image style={styles.ImageVideo} source={ImageVideo}></Image>
         <Text sytle={styles.btn}
-            onPress={() => Linking.openURL('https://www.youtube.com/watch?v=Em9jwmqPpi0')}>
+            onPress={() => Linking.openURL('https://www.youtube.com/embed/i8aYhuTvEFo')}>
              Clique aqui e saiba como jogar
         </Text>
        
@@ -20,19 +20,50 @@ function Ajuda({navigation}){
       </View>
       
       <View style={styles.fundoBlue}>
-       <Text style={styles.tituloTwo}>Perguntas Frequentes</Text> 
+       <Text style={styles.tituloTwo}>Perguntas Frequentes
+      </Text>       
        <View style={styles.container}>     
 
-        <Text style={styles.tituloP}>Lorem Ipsum?</Text>
-        <Text style={styles.respostas}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet commodi, dignissimos ipsum veritatis eos corporis libero molestiae possimus sit dolorum exercitationem cum quibusdam beatae debitis voluptatem mollitia accusantium vel cupiditate?</Text>  
-        <Text style={styles.tituloP}>Lorem Ipsum?</Text>
+        <Text style={styles.tituloP}>
+          A plataforma permite alterar informações cadastradas?
+          </Text>
         <Text style={styles.respostas}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet commodi, dignissimos ipsum veritatis eos corporis libero molestiae possimus sit dolorum exercitationem cum quibusdam beatae debitis voluptatem mollitia accusantium vel cupiditate?
+          Sim. Na página PERFIL em EDITAR você poderá alterar todos os seus dados de usuário.
+          </Text>  
+        <Text style={styles.tituloP}>
+          Preciso estar cadastrado(a) para jogar o FavelAção?
         </Text>
-        <Text style={styles.tituloP}>Lorem Ipsum?</Text>
         <Text style={styles.respostas}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet commodi, dignissimos ipsum veritatis eos corporis libero molestiae possimus sit dolorum exercitationem cum quibusdam beatae debitis voluptatem mollitia accusantium vel cupiditate?
+        Sim. Caso já tenha cadastro, basta realizar login. Caso contrário, será necessário se cadastrar na plataforma e após realizar login, terá acesso ao jogo.
         </Text>
+        <Text style={styles.tituloP}>
+        Quantas vezes eu posso jogar o FavelAção?
+          </Text>
+        <Text style={styles.respostas}>
+          Você poderá jogar quantas vezes quiser. 
+        </Text>
+        <Text style={styles.tituloP}>
+        O jogo FavelAção é educativo?
+          </Text>
+        <Text style={styles.respostas}>
+        Pode ser considerado educativo, voltado para a conscientização ambiental
+        </Text>
+        <Text style={styles.tituloP}>
+        Para qual faixa etária o jogo FavelAção é indicado?
+          </Text>
+        <Text style={styles.respostas}>
+        O jogo é indicado para crianças com idade entre 6 e 9 anos.
+        Como posso ver as imagens que enviei durante as missões do jogo FavelAção? 
+        Na página SOBRE O JOGO você encontrará todas as imagens enviadas ao longo das missões.
+        </Text>
+        <Text style={styles.tituloP}>
+          Tenho uma sugestão ou dúvida sobre a plataforma e/ou sobre o jogo FavelAção, como posso comunicá-la?
+          
+          </Text>
+          <Text style={styles.respostas}>
+          No menu CONTATO você poderá deixar sua mensagem que será analisada por nossa equipe. Ou também pode entrar em contato pelo linkedin dos desenvolvedores, disponíveis na página QUEM SOMOS.
+          </Text>
+        
         </View>
       
          
@@ -100,7 +131,8 @@ const styles = StyleSheet.create({
   },
  respostas: {
    fontSize: 13,
-   color: "#fff",   
+   color: "#fff",  
+   padding: 8, 
 
  },
 
